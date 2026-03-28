@@ -2,9 +2,9 @@
 #include <fstream>
 #include <vector>
 #include "../utils/structs.h"
+#include "../utils/commands.h"
 #include "../Json/JsonReader.h"
 #include "../Json/JsonWriter.h"
-#include "../utils/commands.h"
 
 using namespace std;
 

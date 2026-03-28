@@ -9,14 +9,14 @@
 
 using namespace std;
 
-const string JSONType[6] =  {
-    "json_string",
-    "json_boolean",
-    "json_number",
-    "json_null",
-    "json_array",
-    "json_object"
-};
+// const string JSONType[6] =  {
+//     "json_string",
+//     "json_boolean",
+//     "json_number",
+//     "json_null",
+//     "json_array",
+//     "json_object"
+// };
 
 struct JSON_Value;
 using JSON_Array = vector<JSON_Value>;
