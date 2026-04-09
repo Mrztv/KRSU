@@ -27,14 +27,29 @@ void write_JSON_from_university(University univer) {
             file << get_tab_string(++tab_count) << "{\n" << get_tab_string(++tab_count) << '"' << major.name << "\":[\n";
             for (auto& course : major.courses) {
                 file << get_tab_string(++tab_count) << "[\n";
-                for (auto& student : course.students) {
-                    file << get_tab_string(++tab_count) << "{\"id\": " << student.id <<", \"name\": \""<<student.name<<"\", \"surname\": \""<< student.surname <<"\", \"gender\": \""<< student.gender<<"\", \"age\":"<< student.age << "}";
-                    if (&student != &course.students.back()) {
+
+
+                for (auto& group : course.groups) {
+                    file << get_tab_string(++tab_count) << "{\n" << get_tab_string(++tab_count) << '"' << group.name << "\":[\n";
+
+                    for (auto& student : group.students) {
+                        file << get_tab_string(++tab_count) << "{\"id\": " << student.id <<", \"name\": \""<<student.name<<"\", \"surname\": \""<< student.surname <<"\", \"gender\": \""<< student.gender<<"\", \"age\":"<< student.age << "}";
+                        if (&student != &group.students.back()) {
+                            file << ",";
+                        }
+                        tab_count--;
+                        file << "\n";
+                    }
+
+                    file << get_tab_string(tab_count) << "]\n" << get_tab_string(--tab_count) <<"}";
+                    if (&group != &course.groups.back()) {
                         file << ",";
                     }
                     tab_count--;
-                    file << "\n";
+                    file  << "\n";
                 }
+
+
                 file << get_tab_string(tab_count) << "]";
                 if (&course != &major.courses.back()) {
                     file << ",";

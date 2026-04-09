@@ -11,6 +11,7 @@ using namespace std;
 
 
 struct Student;
+struct Group;
 struct Course;
 struct Major;
 struct Faculty;
@@ -23,11 +24,17 @@ struct Student {
     string gender;
     int age;
 
+    Group* group = nullptr;
+};
+struct Group {
+    string name;
+    vector<Student> students;
+
     Course* course = nullptr;
 };
 struct Course {
     int course_number;
-    vector<Student> students;
+    vector<Group> groups;
 
     Major* major = nullptr;
 };

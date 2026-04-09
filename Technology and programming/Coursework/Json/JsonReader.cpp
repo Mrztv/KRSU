@@ -38,6 +38,19 @@ vector<Student> create_students(JSON_Value& v) {
     return result;
 }
 
+vector<Group> create_groups(JSON_Value& v) {
+    vector<Group> result;
+    for (auto& groups : get<JSON_Array>(v.content)) {
+        Group for_add_group;
+        for (auto& group : get<JSON_Object>(groups.content)) {
+            for_add_group.name = group.first;
+            for_add_group.students = create_students(group.second);
+            result.push_back(for_add_group);
+        }
+    }
+    return result;
+}
+
 vector<Course> create_courses(JSON_Value &v) {
     vector<Course> result;
     int count = 0;
@@ -45,7 +58,7 @@ vector<Course> create_courses(JSON_Value &v) {
     for (auto& course : get<JSON_Array>(v.content)) {
         count++;
         for_add_course.course_number = count;
-        for_add_course.students = create_students(course);
+        for_add_course.groups = create_groups(course);
         result.push_back(for_add_course);
     }
     return result;
@@ -240,8 +253,11 @@ University get_university_from_JSON() {
     for (auto& faculty : university.faculties) {
         for (auto& major : faculty.majors) {
             for (auto& course : major.courses) {
-                for (auto& student : course.students) {
-                    student.course = &course;
+                for (auto& group : course.groups) {
+                    for (auto& student : group.students) {
+                        student.group = &group;
+                    }
+                    group.course = &course;
                 }
                 course.major = &major;
             }

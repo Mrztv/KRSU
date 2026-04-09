@@ -20,20 +20,20 @@ int main() {
     //write_JSON_from_university(my_uni);
 
 
-    Student* my_test_student = &my_uni.faculties[0].majors[0].courses[0].students[0];
+    // Student* my_test_student = &my_uni.faculties[0].majors[0].courses[0].students[0];
     // cout << my_test_student->name << endl;
     // cout << my_test_student->course->major->faculty->university->name << endl;
 
-    vector<Student> students;
-    for (auto& faculty : my_uni.faculties) {
-        for (auto& major : faculty.majors) {
-            for (auto& course : major.courses) {
-                for (auto& student : course.students) {
-                    students.push_back(student);
-                }
-            }
-        }
-    }
+    // vector<Student> students;
+    // for (auto& faculty : my_uni.faculties) {
+    //     for (auto& major : faculty.majors) {
+    //         for (auto& course : major.courses) {
+    //             for (auto& student : course.students) {
+    //                 students.push_back(student);
+    //             }
+    //         }
+    //     }
+    // }
 
 
     while (true) {
@@ -46,6 +46,7 @@ int main() {
             case static_cast<int>(Create) :
                 create_command(&my_uni);
                 write_JSON_from_university(my_uni);
+                my_uni = get_university_from_JSON();
                 cin.ignore();
                 break;
             case static_cast<int>(Read) :
@@ -54,10 +55,14 @@ int main() {
                 break;
             case static_cast<int>(Update) :
                 update_command(&my_uni);
+                write_JSON_from_university(my_uni);
+                my_uni = get_university_from_JSON();
                 cin.ignore();
                 break;
             case static_cast<int>(Delete) :
                 delete_command(&my_uni);
+                write_JSON_from_university(my_uni);
+                my_uni = get_university_from_JSON();
                 cin.ignore();
                 break;
             case static_cast<int>(Exit) :
@@ -65,6 +70,7 @@ int main() {
                 return 1;
             case static_cast<int>(Save) :
                 write_JSON_from_university(my_uni);
+                my_uni = get_university_from_JSON();
                 break;
             default:
                 break;
