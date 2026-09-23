@@ -1,0 +1,15 @@
+/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac1/ConsoleApp1/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1
+/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac1/ConsoleApp1/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.deps.json
+/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac1/ConsoleApp1/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.runtimeconfig.json
+/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac1/ConsoleApp1/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.dll
+/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac1/ConsoleApp1/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.pdb
+/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac1/ConsoleApp1/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac1/ConsoleApp1/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.AssemblyInfoInputs.cache
+/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac1/ConsoleApp1/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.AssemblyInfo.cs
+/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac1/ConsoleApp1/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.csproj.CoreCompileInputs.cache
+/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac1/ConsoleApp1/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.sourcelink.json
+/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac1/ConsoleApp1/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.dll
+/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac1/ConsoleApp1/ConsoleApp1/obj/Debug/net8.0/refint/ConsoleApp1.dll
+/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac1/ConsoleApp1/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.pdb
+/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac1/ConsoleApp1/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.genruntimeconfig.cache
+/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac1/ConsoleApp1/ConsoleApp1/obj/Debug/net8.0/ref/ConsoleApp1.dll
