@@ -1,0 +1,234 @@
+{
+  "main": {
+    "id": "6e76a06d40b18a34",
+    "type": "split",
+    "children": [
+      {
+        "id": "7149757b46016fc1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "649d129520ebaf18",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Учебная практика/Оформление дневника и отчета.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Оформление дневника и отчета"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "efa15d24535a0d7e",
+    "type": "split",
+    "children": [
+      {
+        "id": "0767a9973c9bbf7a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e6d95e33b64457a0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Файловый менеджер"
+            }
+          },
+          {
+            "id": "c43868da592153ec",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Поиск"
+            }
+          },
+          {
+            "id": "fa5fd5cd2ba9c3f0",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Закладки"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a9e56b86957d084d",
+    "type": "split",
+    "children": [
+      {
+        "id": "ab912c30cdb004f0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "11f9d0d6185d581f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Математика/Математика/Типовой расчет №2.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Обратные ссылки для Типовой расчет №2"
+            }
+          },
+          {
+            "id": "924bd232a11a22d9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Математика/Математика/Типовой расчет №2.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Исходящие ссылки из Типовой расчет №2"
+            }
+          },
+          {
+            "id": "cf9d9d8d86dbbdec",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Теги"
+            }
+          },
+          {
+            "id": "7a814917842af59d",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Все свойства"
+            }
+          },
+          {
+            "id": "c632db443188d539",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Математика/Математика/Типовой расчет №2.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Структура Типовой расчет №2"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false,
+      "bases:Создать новую базу": false
+    }
+  },
+  "active": "649d129520ebaf18",
+  "lastOpenFiles": [
+    "Математика/img-D8qPj7.png",
+    "Учебная практика/Оформление дневника и отчета.md",
+    "Учебная практика/Общая информация.md",
+    "Математика/Математика/Диф зачет/Модуль 1.md",
+    "Учебная практика",
+    "Математика/Математика/Модуль 1.pdf",
+    "Technology and programming/Тестирование и отладка программного средства.md",
+    "Математика/Математика/Типовой расчет №2.md",
+    "Математика/Математика/Диф зачет/Pasted image 20260608180626.png",
+    "Математика/Математика/Pasted image 20260525234907.png",
+    "Математика/Математика/Типовой расчет №4.md",
+    "Математика/Математика/Диф зачет",
+    "Математика/Математика/Pasted image 20260526151914.png",
+    "Математика/Математика/Типовой расчет №4.pdf",
+    "Математика/Математика/Pasted image 20260526140351.png",
+    "Математика/Математика/Типовой расчет №3.md",
+    "Математика/Математика/Pasted image 20260526125451.png",
+    "Pasted image 20260526125116.png",
+    "Русский язык/Тексты по русскому.md",
+    "Математика/Математика/Типовой расчет №3.pdf",
+    "Математика/Математика/Типовой  расчет.pdf",
+    "Математика/Математика/Типовой расчет №2.pdf",
+    "Математика/Математика/Типовой  расчет №1.md",
+    "Technology and programming/Coursework/~$рзаитов_Тимур_ЕПИ-4-25_Курсовая_f.docx",
+    "Technology and programming/Файлы.md",
+    "Technology and programming/Coursework/~WRL2306.tmp",
+    "Technology and programming/Coursework/~WRD2286.tmp",
+    "Technology and programming/Понятие искусственный интеллект.md",
+    "Technology and programming/Pasted image 20260307174600.png",
+    "Математика/Математика/tp3_8.png",
+    "Математика/Математика/tp3_2.png",
+    "Technology and programming/Структуры.md",
+    "Technology and programming/Указатели.md",
+    "Technology and programming/Перечисления. Объединения. Битовые поля.md",
+    "Русский язык/Видео.md",
+    "Русский язык/Презентация идеи.md",
+    "Русский язык/Добро пожаловать.md",
+    "Английский/English/Добро пожаловать.md",
+    "Technology and programming/Coursework/Курсовая.md",
+    "Technology and programming/Coursework/parser.md",
+    "Technology and programming/Процессы жизненного цикла программных средств.md",
+    "Technology and programming/Введение в современные технологии программирования.md",
+    "Technology and programming/Термины.md",
+    "Technology and programming/Функции, перегрузка функций.md",
+    "Technology and programming/Циклы while, do while.md"
+  ]
+}
