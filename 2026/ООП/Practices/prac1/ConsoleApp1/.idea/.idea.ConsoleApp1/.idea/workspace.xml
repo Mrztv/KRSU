@@ -13,7 +13,33 @@
     <configurations />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="377324c9-420a-4c50-8b97-33efac8d7602" name="Changes" comment="" />
+    <list default="true" id="377324c9-420a-4c50-8b97-33efac8d7602" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../../.obsidian/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.obsidian/workspace.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ConsoleApp1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ConsoleApp1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/ConsoleApp1.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/ConsoleApp1.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/apphost" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/apphost" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ref/ConsoleApp1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/ref/ConsoleApp1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/refint/ConsoleApp1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net8.0/refint/ConsoleApp1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Хмелева/.~lock.!Методические указания к лабООП.docx#" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Хмелева/.~lock.!Методические указания к лабООП.docx#" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Хмелева/ООП1.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Хмелева/ООП1.pptx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Хмелева/лек2-26.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Хмелева/лек2-26.pptx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Хмелева/лек3-26.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Хмелева/лек3-26.pptx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,61 +73,61 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="2.1784974190056032" />
-      <entry key="MS500" value="2.7988538497010165" />
-      <entry key="S2" value="2.947736619730346" />
-      <entry key="S5" value="3.042844014581009" />
-      <entry key="S10" value="3.6971944275883364" />
-      <entry key="S30" value="7.9395709674401465" />
-      <entry key="S60" value="15.738103515474087" />
-      <entry key="M2" value="32.17221057378124" />
-      <entry key="M5" value="74.06318168359017" />
-      <entry key="M10" value="120.23544442048812" />
-      <entry key="M15" value="148.87769451718734" />
-      <entry key="M30" value="192.23759187017927" />
-      <entry key="H1" value="223.16097894889722" />
-      <entry key="H2" value="242.08221017910665" />
-      <entry key="H4" value="252.62649875407206" />
-      <entry key="D1" value="262.0429877465812" />
-      <entry key="W1" value="263.71886893761484" />
+      <entry key="MS100" value="1.00186784167753" />
+      <entry key="MS500" value="1.495904262723684" />
+      <entry key="S2" value="2.5854947094303533" />
+      <entry key="S5" value="3.3140244526067004" />
+      <entry key="S10" value="4.1220685498938945" />
+      <entry key="S30" value="8.327190914630112" />
+      <entry key="S60" value="20.24050742220519" />
+      <entry key="M2" value="47.50602126107379" />
+      <entry key="M5" value="111.57738478364797" />
+      <entry key="M10" value="180.5809518209866" />
+      <entry key="M15" value="224.28959685083555" />
+      <entry key="M30" value="292.0790212307772" />
+      <entry key="H1" value="341.51446476068315" />
+      <entry key="H2" value="372.1590289991624" />
+      <entry key="H4" value="389.3571531402471" />
+      <entry key="D1" value="404.7855025131802" />
+      <entry key="W1" value="407.53805883120316" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.4789846883376807E-75" />
-      <entry key="MS500" value="1.0814158623366593E-15" />
-      <entry key="S2" value="1.813419092839762E-4" />
-      <entry key="S5" value="0.03187749818792115" />
-      <entry key="S10" value="0.18328758924924268" />
-      <entry key="S30" value="1.0416659292685415" />
-      <entry key="S60" value="2.6178656098706323" />
-      <entry key="M2" value="5.740642131674553" />
-      <entry key="M5" value="14.855367683402495" />
-      <entry key="M10" value="25.565339809416077" />
-      <entry key="M15" value="32.41265878682341" />
-      <entry key="M30" value="43.101526725009386" />
-      <entry key="H1" value="51.01396532270947" />
-      <entry key="H2" value="56.01409461099584" />
-      <entry key="H4" value="58.86512566014421" />
-      <entry key="D1" value="61.45588133572144" />
-      <entry key="W1" value="61.92171087891037" />
+      <entry key="MS100" value="5.21150130195118E-32" />
+      <entry key="MS500" value="5.538505229595764E-7" />
+      <entry key="S2" value="0.027280237222930086" />
+      <entry key="S5" value="0.23677688494155774" />
+      <entry key="S10" value="0.4867967123375422" />
+      <entry key="S30" value="0.9296070985494066" />
+      <entry key="S60" value="1.8589103805195402" />
+      <entry key="M2" value="4.175440186097171" />
+      <entry key="M5" value="12.115123568859676" />
+      <entry key="M10" value="23.975329251734316" />
+      <entry key="M15" value="32.53605680267191" />
+      <entry key="M30" value="46.886914982197176" />
+      <entry key="H1" value="58.04390215365195" />
+      <entry key="H2" value="65.25356329012459" />
+      <entry key="H4" value="69.40595077992018" />
+      <entry key="D1" value="73.20070391774054" />
+      <entry key="W1" value="73.88494880943982" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.5366866355046342" />
-      <entry key="MS500" value="2.0566781242847263" />
-      <entry key="S2" value="2.611381760947214" />
-      <entry key="S5" value="2.9168008735073623" />
-      <entry key="S10" value="3.7815958777570957" />
-      <entry key="S30" value="8.898196953793406" />
-      <entry key="S60" value="18.258451753266474" />
-      <entry key="M2" value="37.800536838071025" />
-      <entry key="M5" value="88.79777210703953" />
-      <entry key="M10" value="145.69365275293916" />
-      <entry key="M15" value="181.1979424605485" />
-      <entry key="M30" value="235.27591542925524" />
-      <entry key="H1" value="274.13691850027266" />
-      <entry key="H2" value="298.07525794878654" />
-      <entry key="H4" value="311.4805232868061" />
-      <entry key="D1" value="323.4969318096554" />
-      <entry key="W1" value="325.6403008336679" />
+      <entry key="MS100" value="0.09706067512863627" />
+      <entry key="MS500" value="1.024290185976071" />
+      <entry key="S2" value="2.4064132468132087" />
+      <entry key="S5" value="3.402875339528178" />
+      <entry key="S10" value="4.473497204116627" />
+      <entry key="S30" value="9.150266717536658" />
+      <entry key="S60" value="21.986254423910314" />
+      <entry key="M2" value="51.53346633690874" />
+      <entry key="M5" value="123.51950071496165" />
+      <entry key="M10" value="204.40155182094975" />
+      <entry key="M15" value="256.69200947743064" />
+      <entry key="M30" value="338.87416026021845" />
+      <entry key="H1" value="399.5028963135961" />
+      <entry key="H2" value="437.38178861374155" />
+      <entry key="H4" value="458.7468248992732" />
+      <entry key="D1" value="477.98336046815024" />
+      <entry key="W1" value="481.42259766678455" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -116,31 +142,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.ConsoleApp1 (1).executor": "Run",
-    ".NET Project.ConsoleApp1.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "cidr.known.project.marker": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac1",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.ConsoleApp1 (1).executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.ConsoleApp1.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac2/ConsoleApp2/ConsoleApp2/ConsoleApp2.csproj&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="ConsoleApp1" type="DotNetProject" factoryName=".NET Project" temporary="true">
       <option name="EXE_PATH" value="$PROJECT_DIR$/ConsoleApp1/bin/Debug/net8.0/ConsoleApp1" />
@@ -228,5 +255,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

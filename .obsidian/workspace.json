@@ -13,15 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Учебная практика/Оформление дневника и отчета.md",
+                "file": "2026/Физра/Общие понятия теории физической культуры.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Оформление дневника и отчета"
+              "title": "Общие понятия теории физической культуры"
+            }
+          },
+          {
+            "id": "47d6104ce1b344a5",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.13.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "примечания к выпуску 1.13.7"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -41,7 +54,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Файловый менеджер"
@@ -183,8 +198,11 @@
       "bases:Создать новую базу": false
     }
   },
-  "active": "649d129520ebaf18",
+  "active": "e6d95e33b64457a0",
   "lastOpenFiles": [
+    "Без названия.base",
+    "2026/Физра",
+    "2026/Физра/Общие понятия теории физической культуры.md",
     "Математика/img-D8qPj7.png",
     "Учебная практика/Оформление дневника и отчета.md",
     "Учебная практика/Общая информация.md",
@@ -211,7 +229,6 @@
     "Technology and programming/Coursework/~$рзаитов_Тимур_ЕПИ-4-25_Курсовая_f.docx",
     "Technology and programming/Файлы.md",
     "Technology and programming/Coursework/~WRL2306.tmp",
-    "Technology and programming/Coursework/~WRD2286.tmp",
     "Technology and programming/Понятие искусственный интеллект.md",
     "Technology and programming/Pasted image 20260307174600.png",
     "Математика/Математика/tp3_8.png",
@@ -228,7 +245,6 @@
     "Technology and programming/Процессы жизненного цикла программных средств.md",
     "Technology and programming/Введение в современные технологии программирования.md",
     "Technology and programming/Термины.md",
-    "Technology and programming/Функции, перегрузка функций.md",
-    "Technology and programming/Циклы while, do while.md"
+    "Technology and programming/Функции, перегрузка функций.md"
   ]
 }

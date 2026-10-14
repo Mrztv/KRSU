@@ -68,9 +68,10 @@ int[] DeleteElems(int[] original, params int[] elems)
 
 Console.WriteLine("Task 4");
 
-int[] arrayT4 = { 1, 2, 3, 4, 5 };
+int[] arrayT4 = { -1, 0, 1, 2, 3, 4, 5 };
 
-int min, max, avg;
+int min, max;
+double avg;
 
 OutMethod(arrayT4, out min, out max, out avg);
 Console.WriteLine("Out");
@@ -83,19 +84,46 @@ Console.WriteLine("Tuple");
 Console.WriteLine("Min: {0}", tuple.Item1);
 Console.WriteLine("Max: {0}", tuple.Item2);
 Console.WriteLine("Average: {0}", tuple.Item3);
-void OutMethod(int[] array, out int min, out int max, out int avg)
+
+int[] PositiveArray(int[] array)
 {
-    min = array.Min();
-    max = array.Max();
-    avg = Convert.ToInt32(array.Average());
+    int length = array.Length;
+    foreach (int i in array)
+    {
+        if (i < 0)
+        {
+            length--;
+        }
+    }
+    
+    int[] result =  new int[length];
+    int index = 0;
+    foreach (int i in array)
+    {
+        if (i >= 0)
+        {
+            result[index++] = array[i];
+        }
+    }
+    return result;
 }
 
-(int, int, int) TupleMethod(int[] array)
+void OutMethod(int[] array, out int min, out int max, out double avg)
 {
-    int min, max, avg;
-    min = array.Min();
-    max = array.Max();
-    avg = Convert.ToInt32(array.Average());
+    int[] positiveArray = PositiveArray(array);   
+    min = positiveArray.Min();
+    max = positiveArray.Max();
+    avg = positiveArray.Average();
+}
+
+(int, int, double) TupleMethod(int[] array)
+{
+    int min, max;
+    double avg;
+    int[] positiveArray = PositiveArray(array);   
+    min = positiveArray.Min();
+    max = positiveArray.Max();
+    avg = positiveArray.Average();
     return (min, max, avg);
 }
 
