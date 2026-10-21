@@ -28,7 +28,7 @@ public abstract class Car : Transport
         Wheels = wheels;
     }
 
-    protected override void Move()
+    public override void Move()
     {
         Console.WriteLine("Car is moving on road");
         Position += (Direction * Speed);
@@ -36,7 +36,7 @@ public abstract class Car : Transport
 
     protected override void Refuel()
     {
-        Fuel = 40;
+        Fuel = 90;
     }
 
     protected override void Repair()

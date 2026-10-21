@@ -9,7 +9,7 @@ public abstract class Transport
     protected Vector Direction { get; set; }
     protected Vector Position { get; set; }
 
-    protected abstract void Move();
+    public abstract void Move();
 
     protected virtual void Refuel()
     {
