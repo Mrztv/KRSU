@@ -1,0 +1,15 @@
+/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac5/Lab5/Lab5/bin/Debug/net8.0/Lab5
+/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac5/Lab5/Lab5/bin/Debug/net8.0/Lab5.deps.json
+/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac5/Lab5/Lab5/bin/Debug/net8.0/Lab5.runtimeconfig.json
+/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac5/Lab5/Lab5/bin/Debug/net8.0/Lab5.dll
+/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac5/Lab5/Lab5/bin/Debug/net8.0/Lab5.pdb
+/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac5/Lab5/Lab5/obj/Debug/net8.0/Lab5.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac5/Lab5/Lab5/obj/Debug/net8.0/Lab5.AssemblyInfoInputs.cache
+/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac5/Lab5/Lab5/obj/Debug/net8.0/Lab5.AssemblyInfo.cs
+/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac5/Lab5/Lab5/obj/Debug/net8.0/Lab5.csproj.CoreCompileInputs.cache
+/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac5/Lab5/Lab5/obj/Debug/net8.0/Lab5.sourcelink.json
+/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac5/Lab5/Lab5/obj/Debug/net8.0/Lab5.dll
+/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac5/Lab5/Lab5/obj/Debug/net8.0/refint/Lab5.dll
+/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac5/Lab5/Lab5/obj/Debug/net8.0/Lab5.pdb
+/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac5/Lab5/Lab5/obj/Debug/net8.0/Lab5.genruntimeconfig.cache
+/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac5/Lab5/Lab5/obj/Debug/net8.0/ref/Lab5.dll
