@@ -11,6 +11,7 @@ class Paper : INameAndCopy
         Name = name;
         Person = person;
         CreationDate = creationDate;
+        Person.AddPaper(this);
     }
     
     public Paper()
@@ -18,6 +19,7 @@ class Paper : INameAndCopy
         Name = "Who eat Joe's sandwich";
         Person = new Person();
         CreationDate = DateTime.Now;
+        Person.AddPaper(this);
     }
 
     public override string ToString()

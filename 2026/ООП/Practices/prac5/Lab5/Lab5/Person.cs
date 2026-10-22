@@ -1,6 +1,8 @@
+using System.Collections;
+
 namespace Lab5;
 
-class Person : INameAndCopy
+class Person : INameAndCopy 
 {
     private string _name;
     public string Name
@@ -14,6 +16,24 @@ class Person : INameAndCopy
             }
             _name = value;
         }
+    }
+    
+    private ArrayList _papers = new ArrayList();
+
+    public ArrayList Papers
+    {
+        get => _papers;
+        set =>  _papers = value;
+    }
+
+    public void AddPaper(Paper paper)
+    {
+        Papers.Add(paper);  
+    }
+
+    public void AddPapers(params Paper[] papers)
+    {
+        Papers.AddRange(papers);
     }
 
     private string _surname;
@@ -59,7 +79,7 @@ class Person : INameAndCopy
 
     public override string ToString()
     {
-        return $"Name: {_name}\nSurname: {_surname}\nBirthday: {_dateOfBirth}";
+        return $"Name: {_name} Surname: {_surname} Birthday: {_dateOfBirth}";
     }
     
     public string ToShortString()
@@ -93,7 +113,15 @@ class Person : INameAndCopy
 
     public object DeepCopy()
     {
-        return new Person(_name, _surname, _dateOfBirth);
+        Person person = new  Person(_name, _surname, _dateOfBirth);
+        person.Papers = new ArrayList();
+        foreach (Paper paper in Papers)
+        {
+            person.Papers.Add(paper.DeepCopy());
+        }
+
+        return person;
+
     }
     
 }
