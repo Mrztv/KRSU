@@ -41,6 +41,11 @@ public class Team : INameAndCopy
         return tmp;
     }
 
+    object INameAndCopy.DeepCopy()
+    {
+        return DeepCopy();
+    }
+
     public override bool Equals(object? obj)
     {
         if (obj is Team team)

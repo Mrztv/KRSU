@@ -25,12 +25,14 @@
             "id": "47d6104ce1b344a5",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.13.7"
+                "file": "2025/Русский язык/Эссе.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "примечания к выпуску 1.13.7"
+              "icon": "lucide-file",
+              "title": "Эссе"
             }
           }
         ],
@@ -198,7 +200,7 @@
       "bases:Создать новую базу": false
     }
   },
-  "active": "e6d95e33b64457a0",
+  "active": "47d6104ce1b344a5",
   "lastOpenFiles": [
     "Без названия.base",
     "2026/Физра",

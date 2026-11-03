@@ -1,0 +1,34 @@
+|lab4_2
+F <= truth_table_block:inst2.F
+E <= structural_block:inst.E
+A => structural_block:inst.A
+A => behavioral_block:inst1.A
+B => structural_block:inst.B
+B => behavioral_block:inst1.B
+C => structural_block:inst.C
+C => behavioral_block:inst1.C
+G <= behavioral_block:inst1.G
+X => truth_table_block:inst2.X
+
+
+|lab4_2|truth_table_block:inst2
+E => Decoder0.IN0
+G => Decoder0.IN1
+X => Decoder0.IN2
+F <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab4_2|structural_block:inst
+A => comb.IN1
+B => G.IN0
+C => G.IN1
+E <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab4_2|behavioral_block:inst1
+A => G.IN1
+B => G.IN0
+C => G.IN1
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
+
+

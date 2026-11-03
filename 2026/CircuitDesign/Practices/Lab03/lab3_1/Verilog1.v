@@ -1,0 +1,22 @@
+module struct (A, F, C, G, W);
+	input F, C, G, W;
+	output A;
+	
+	not(_C, C);
+	not(_W, W);
+	not(_F, F);
+	
+	and(tmp1, _C, G, W);
+	and(tmp2, C, G, _W);
+	and(tmp3, C, G, W);
+	
+	
+	and(A, _F, tmp1, tmp2, tmp3);
+endmodule 
+
+module behavior (A, F, C, G, W);
+	input F, C, G, W;
+	output A;
+	
+	assign A = ~F&( (~C&G&W) | (C&G&~W) | (C&G&W));
+endmodule 

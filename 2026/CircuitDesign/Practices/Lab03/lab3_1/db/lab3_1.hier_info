@@ -1,0 +1,19 @@
+|lab3_1
+A << WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
+C => WideOr0.IN0
+C => WideOr1.IN0
+C => WideOr2.IN0
+C => WideOr3.IN0
+C => WideOr4.IN0
+G => WideOr0.IN1
+G => WideOr1.IN1
+G => WideOr3.IN1
+G => WideOr4.IN1
+G => WideOr2.IN1
+W => WideOr0.IN2
+W => WideOr2.IN2
+W => WideOr3.IN2
+W => WideOr1.IN2
+W => WideOr4.IN2
+
+

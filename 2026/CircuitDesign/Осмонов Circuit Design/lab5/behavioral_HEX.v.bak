@@ -1,0 +1,5 @@
+module behavioral_HEX (output F, input [0.3] IN);
+
+
+
+endmodule

@@ -1,0 +1,5 @@
+module structural_example (A, C, G, W);
+	input C, G, W;
+	output A;
+	
+endmodule

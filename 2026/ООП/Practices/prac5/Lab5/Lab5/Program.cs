@@ -73,6 +73,28 @@ internal class Program
         {
             Console.WriteLine(paperNotOlderThan2);
         }
+
+        Console.WriteLine("Has a paper");
+        ResearchTeamEnumerator researchTeamEnumerator = new ResearchTeamEnumerator(res.Persons);
+        foreach (Person person in researchTeamEnumerator)
+        {
+            Console.WriteLine(person);
+        }
+
+        Console.WriteLine("Has more than 1 paper");
+        foreach (Person person in res.GetMembersWithMoreThanOnePaper())
+        {
+            Console.WriteLine(person);
+        }
+
+        Console.WriteLine("Paper in last Year");
+        foreach (Paper paper in res.GetLastYearPapers())
+        {
+            Console.WriteLine(paper);
+        }
+
+        
+        
     }
     
     

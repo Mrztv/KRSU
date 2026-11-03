@@ -135,15 +135,28 @@ class ResearchTeam : Team, INameAndCopy
     
     
     
-    public object DeepCopy()
+    public new object DeepCopy()
     {
         ResearchTeam researchTeam = new ResearchTeam(_topic, organization, Name, Id, _researchDuration);
-        researchTeam.Papers = new ArrayList(Papers);
-        researchTeam.Persons = new ArrayList(Persons);
-        researchTeam.Topic = _topic;
+        researchTeam.Papers = new ArrayList();
+        foreach (Paper paper in Papers)
+        {
+            researchTeam.Papers.Add(paper.DeepCopy());
+        }
+        researchTeam.Persons = new ArrayList();
+        foreach (Person person in Persons)
+        {
+            researchTeam.Persons.Add(person.DeepCopy());
+        }
+        researchTeam.Topic = new string(_topic);
         researchTeam.ResearchDuration = ResearchDuration;
-        researchTeam.Name = Name;
+        researchTeam.Name = new string(Name);
         return researchTeam;
+    }
+
+    object INameAndCopy.DeepCopy()
+    {
+        return DeepCopy();
     }
 
     public IEnumerable<Person> GetPersonsWithoutPapers()
@@ -167,5 +180,30 @@ class ResearchTeam : Team, INameAndCopy
             }
         }
     }
+    
+    
+    public IEnumerable<Person> GetMembersWithMoreThanOnePaper()
+    {
+        foreach (Person p in _persons)
+        {
+            if (p.Papers.Count > 1)
+                yield return p;
+        }
+    }
+    
+    
+    public IEnumerable<Paper> GetLastYearPapers()
+    {
+        foreach (Paper paper in Papers)
+        {
+            if (DateTime.Now.Year - paper.CreationDate.Year < 1)
+            {
+                yield return paper;
+            }
+        }
+    }
+
+    
+    
     
 }

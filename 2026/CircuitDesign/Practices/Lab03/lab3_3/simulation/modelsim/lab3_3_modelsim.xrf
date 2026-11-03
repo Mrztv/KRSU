@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab03/lab3_3/pos_block.bdf
+source_file = 1, C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab03/lab3_3/sop_block.bdf
+source_file = 1, C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab03/lab3_3/structural.v
+source_file = 1, C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab03/lab3_3/behavioral.v
+source_file = 1, C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab03/lab3_3/db/lab3_3.cbx.xml
+design_name = structural
+instance = comp, \F_sop~output\, F_sop~output, structural, 1
+instance = comp, \F_pos~output\, F_pos~output, structural, 1
+instance = comp, \B~input\, B~input, structural, 1
+instance = comp, \A~input\, A~input, structural, 1
+instance = comp, \C~input\, C~input, structural, 1
+instance = comp, \comb_4|WideOr0~0\, comb_4|WideOr0~0, structural, 1

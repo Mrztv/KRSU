@@ -1,0 +1,292 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 112 104 280 120)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "A" (rect 5 0 13 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 136 128 304 144)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "B" (rect 5 0 12 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 136 152 304 168)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "C" (rect 5 0 13 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 136 400 304 416)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "X" (rect 5 0 10 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 664 128 840 144)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "F" (rect 90 0 97 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 464 -48 480 128)
+	(text "OUTPUT" (rect 0 137 10 175)(font "Arial" (font_size 6))(vertical))
+	(text "E" (rect 0 79 12 86)(font "Arial" )(vertical))
+	(pt 8 176)
+	(drawing
+		(line (pt 8 176)(pt 8 124))
+		(line (pt 4 124)(pt 4 98))
+		(line (pt 12 124)(pt 12 98))
+		(line (pt 12 124)(pt 4 124))
+		(line (pt 4 98)(pt 8 94))
+		(line (pt 8 94)(pt 12 98))
+		(line (pt 12 98)(pt 8 94))
+	)
+	(rotate90)
+)
+(pin
+	(output)
+	(rect 296 240 472 256)
+	(text "OUTPUT" (rect 137 6 175 16)(font "Arial" (font_size 6)))
+	(text "G" (rect 78 4 86 16)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 176 8)(pt 124 8))
+		(line (pt 124 12)(pt 98 12))
+		(line (pt 124 4)(pt 98 4))
+		(line (pt 124 4)(pt 124 12))
+		(line (pt 98 12)(pt 94 8))
+		(line (pt 94 8)(pt 98 4))
+		(line (pt 98 4)(pt 94 8))
+	)
+	(rotate180)
+)
+(block
+	(rect 328 96 448 224)
+	(text " structural_block" (rect 5 5 99 19)(font "Arial" (font_size 8)))	(text "inst" (rect 5 113 22 125)(font "Arial" ))	(block_io "A" (input))
+	(block_io "B" (input))
+	(block_io "C" (input))
+	(block_io "E" (output))
+	(mapper
+		(pt 0 32)
+		(bidir)
+		)
+	(mapper
+		(pt 120 32)
+		(bidir)
+		)
+)
+(block
+	(rect 504 96 624 224)
+	(text "truth_table_block" (rect 5 5 101 19)(font "Arial" (font_size 8)))	(text "inst2" (rect 5 113 28 125)(font "Arial" ))	(block_io "E" (input))
+	(block_io "G" (input))
+	(block_io "X" (input))
+	(block_io "F" (output))
+	(mapper
+		(pt 0 32)
+		(bidir)
+		)
+	(mapper
+		(pt 0 48)
+		(bidir)
+		)
+	(mapper
+		(pt 0 64)
+		(bidir)
+		)
+	(mapper
+		(pt 120 32)
+		(bidir)
+		)
+)
+(block
+	(rect 328 264 448 392)
+	(text "behavioral_block" (rect 5 5 100 19)(font "Arial" (font_size 8)))	(text "inst1" (rect 5 113 28 125)(font "Arial" ))	(block_io "A" (input))
+	(block_io "B" (input))
+	(block_io "C" (input))
+	(block_io "G" (output))
+	(mapper
+		(pt 0 32)
+		(bidir)
+		)
+	(mapper
+		(pt 120 32)
+		(bidir)
+		)
+)
+(connector
+	(pt 488 408)
+	(pt 304 408)
+	(conduit)
+)
+(connector
+	(pt 304 136)
+	(pt 320 136)
+	(conduit)
+)
+(connector
+	(pt 320 128)
+	(pt 328 128)
+	(conduit)
+)
+(connector
+	(pt 472 144)
+	(pt 504 144)
+	(conduit)
+)
+(connector
+	(pt 488 160)
+	(pt 504 160)
+	(conduit)
+)
+(connector
+	(pt 656 136)
+	(pt 656 128)
+	(conduit)
+)
+(connector
+	(pt 664 136)
+	(pt 656 136)
+	(conduit)
+)
+(connector
+	(pt 656 128)
+	(pt 624 128)
+	(conduit)
+)
+(connector
+	(pt 488 408)
+	(pt 488 160)
+	(conduit)
+)
+(connector
+	(pt 472 296)
+	(pt 448 296)
+	(conduit)
+)
+(connector
+	(pt 328 296)
+	(pt 320 296)
+	(conduit)
+)
+(connector
+	(pt 320 128)
+	(pt 320 136)
+	(conduit)
+)
+(connector
+	(pt 320 136)
+	(pt 320 296)
+	(conduit)
+)
+(connector
+	(pt 304 112)
+	(pt 280 112)
+	(conduit)
+)
+(connector
+	(pt 304 112)
+	(pt 304 136)
+	(conduit)
+)
+(connector
+	(pt 304 136)
+	(pt 304 160)
+	(conduit)
+)
+(connector
+	(pt 448 128)
+	(pt 472 128)
+	(conduit)
+)
+(connector
+	(pt 472 128)
+	(pt 504 128)
+	(conduit)
+)
+(connector
+	(pt 472 144)
+	(pt 472 248)
+	(conduit)
+)
+(connector
+	(pt 472 248)
+	(pt 472 296)
+	(conduit)
+)
+(junction (pt 304 136))
+(junction (pt 320 136))
+(junction (pt 472 128))
+(junction (pt 472 248))

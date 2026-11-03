@@ -1,0 +1,6 @@
+module behavioral_example (F, A, B, C);
+input A, B, C;
+output F; /*всегда комментируйте свой код,
+чтобы помнить то, что вы сделали*/
+assign F=(A|(~C&B)); // запишите логическое выражение
+endmodule

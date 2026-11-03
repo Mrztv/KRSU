@@ -1,0 +1,242 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "10/13/2026 15:28:47"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    behavioral
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module behavioral_vlg_sample_tst(
+	A,
+	B,
+	C,
+	sampler_tx
+);
+input  A;
+input  B;
+input  C;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(A or B or C)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module behavioral_vlg_check_tst (
+	F_pos,
+	F_sop,
+	sampler_rx
+);
+input  F_pos;
+input  F_sop;
+input sampler_rx;
+
+reg  F_pos_expected;
+reg  F_sop_expected;
+
+reg  F_pos_prev;
+reg  F_sop_prev;
+
+reg  F_pos_expected_prev;
+reg  F_sop_expected_prev;
+
+reg  last_F_pos_exp;
+reg  last_F_sop_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:2] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 2'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	F_pos_prev = F_pos;
+	F_sop_prev = F_sop;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	F_pos_expected_prev = F_pos_expected;
+	F_sop_expected_prev = F_sop_expected;
+end
+
+
+
+// expected F_pos
+initial
+begin
+	F_pos_expected = 1'bX;
+end 
+
+// expected F_sop
+initial
+begin
+	F_sop_expected = 1'bX;
+end 
+// generate trigger
+always @(F_pos_expected or F_pos or F_sop_expected or F_sop)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected F_pos = %b | expected F_sop = %b | ",F_pos_expected_prev,F_sop_expected_prev);
+	$display("| real F_pos = %b | real F_sop = %b | ",F_pos_prev,F_sop_prev);
+`endif
+	if (
+		( F_pos_expected_prev !== 1'bx ) && ( F_pos_prev !== F_pos_expected_prev )
+		&& ((F_pos_expected_prev !== last_F_pos_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port F_pos :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", F_pos_expected_prev);
+		$display ("     Real value = %b", F_pos_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_F_pos_exp = F_pos_expected_prev;
+	end
+	if (
+		( F_sop_expected_prev !== 1'bx ) && ( F_sop_prev !== F_sop_expected_prev )
+		&& ((F_sop_expected_prev !== last_F_sop_exp) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port F_sop :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", F_sop_expected_prev);
+		$display ("     Real value = %b", F_sop_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_F_sop_exp = F_sop_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#800000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module behavioral_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg A;
+reg B;
+reg C;
+// wires                                               
+wire F_pos;
+wire F_sop;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+behavioral i1 (
+// port map - connection between master ports and signals/registers   
+	.A(A),
+	.B(B),
+	.C(C),
+	.F_pos(F_pos),
+	.F_sop(F_sop)
+);
+
+// A
+always
+begin
+	A = 1'b0;
+	A = #400000 1'b1;
+	#400000;
+end 
+
+// B
+always
+begin
+	B = 1'b0;
+	B = #200000 1'b1;
+	#200000;
+end 
+
+// C
+always
+begin
+	C = 1'b0;
+	C = #100000 1'b1;
+	#100000;
+end 
+
+behavioral_vlg_sample_tst tb_sample (
+	.A(A),
+	.B(B),
+	.C(C),
+	.sampler_tx(sampler)
+);
+
+behavioral_vlg_check_tst tb_out(
+	.F_pos(F_pos),
+	.F_sop(F_sop),
+	.sampler_rx(sampler)
+);
+endmodule
+

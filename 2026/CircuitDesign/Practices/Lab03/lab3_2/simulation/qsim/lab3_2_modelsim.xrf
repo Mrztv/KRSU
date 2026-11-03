@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab03/lab3_2/lab3_2.v
+source_file = 1, C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab03/lab3_2/Waveform.vwf
+source_file = 1, C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab03/lab3_2/db/lab3_2.cbx.xml
+design_name = lab3_2
+instance = comp, \A~output , A~output, lab3_2, 1
+instance = comp, \W~input , W~input, lab3_2, 1
+instance = comp, \G~input , G~input, lab3_2, 1
+instance = comp, \C~input , C~input, lab3_2, 1
+instance = comp, \A~0 , A~0, lab3_2, 1

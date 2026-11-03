@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/lab1/project2.bdf
+source_file = 1, C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/lab1/project1.bdf
+source_file = 1, C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/lab1/problem2.bdf
+source_file = 1, C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/lab1/db/project1.cbx.xml
+design_name = project2
+instance = comp, \F~output\, F~output, project2, 1
+instance = comp, \x~input\, x~input, project2, 1
+instance = comp, \z~input\, z~input, project2, 1
+instance = comp, \y~input\, y~input, project2, 1
+instance = comp, \inst~0\, inst~0, project2, 1

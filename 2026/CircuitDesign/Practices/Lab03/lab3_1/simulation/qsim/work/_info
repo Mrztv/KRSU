@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\timur\Documents\KRSU\2026\CircuitDesign\Practices\Lab03\lab3_1\simulation\qsim
+vlab3_1
+Z1 ICMG4mFN:Dk=<3TDgJB=TJ2
+Z2 VJT=dg?J847h8kW_`LOJA72
+Z3 dC:\Users\timur\Documents\KRSU\2026\CircuitDesign\Practices\Lab03\lab3_1\simulation\qsim
+Z4 w1791833682
+Z5 8lab3_1.vo
+Z6 Flab3_1.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 ;@OGEb9EBYgYJYm7Za9T62
+!s85 0
+Z10 !s108 1791833684.020000
+Z11 !s107 lab3_1.vo|
+Z12 !s90 -work|work|lab3_1.vo|
+!s101 -O0
+vlab3_1_vlg_check_tst
+!i10b 1
+!s100 PW[AUmU:1G@P25DRM>PET2
+I_:I3:igNf69lgI?ln6]`Q2
+VnPHY[=@OaSK[Ukfz[;KX71
+R3
+Z13 w1791833681
+Z14 8Waveform.vwf.vt
+Z15 FWaveform.vwf.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z16 !s108 1791833684.126000
+Z17 !s107 Waveform.vwf.vt|
+Z18 !s90 -work|work|Waveform.vwf.vt|
+!s101 -O0
+R8
+vlab3_1_vlg_sample_tst
+!i10b 1
+!s100 @>cZDm[HCznnBWDT@nlYM1
+I:a56dNakV]oAilZRH3]=33
+VB8_X<l?>A78>cf=SgZlXW3
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+vlab3_1_vlg_vec_tst
+!i10b 1
+!s100 FanHW]6:DeoWnboXl3[^N2
+IoI`Je?K6T;z90z`BTzNaD1
+Vj<X<b4kkicGz;IF0M=Bjl0
+R3
+R13
+R14
+R15
+L0 156
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
