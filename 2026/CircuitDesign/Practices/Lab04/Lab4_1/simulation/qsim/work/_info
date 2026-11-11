@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\timur\Documents\KRSU\2026\CircuitDesign\Practices\Lab04\Lab4_1\simulation\qsim
+vfarmer_problem
+Z1 !s100 MWi>]:bYmCeFR6cfonabQ2
+Z2 IDYaRRH6=Dm9e;b3`1nknZ1
+Z3 V`IcTF<1;E[8O[1F124P2h1
+Z4 dC:\Users\timur\Documents\KRSU\2026\CircuitDesign\Practices\Lab04\Lab4_1\simulation\qsim
+Z5 w1794249481
+Z6 8Lab4_1.vo
+Z7 FLab4_1.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|Lab4_1.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1794249482.453000
+Z12 !s107 Lab4_1.vo|
+!s101 -O0
+vfarmer_problem_vlg_check_tst
+!i10b 1
+Z13 !s100 C1zEc`;=nPEg@S@WjPdPF0
+Z14 I<<i3H6EQ3>=VgL>balhc@1
+Z15 VU;3hhH0XgPl`>TP2f:ZVk3
+R4
+Z16 w1794249480
+Z17 8Waveform.vwf.vt
+Z18 FWaveform.vwf.vt
+L0 63
+R8
+r1
+!s85 0
+31
+Z19 !s108 1794249482.573000
+Z20 !s107 Waveform.vwf.vt|
+Z21 !s90 -work|work|Waveform.vwf.vt|
+!s101 -O0
+R10
+vfarmer_problem_vlg_sample_tst
+!i10b 1
+Z22 !s100 =YOjOBb3PI2Fc]ePj20AZ3
+Z23 InDgfV@1IL=>MBYeLRl[Pd3
+Z24 Vmei4397oMhKa_YiW<InRM2
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vfarmer_problem_vlg_vec_tst
+!i10b 1
+!s100 Do>:<B58^@kC9n@XPC_7U0
+I;DSe=c65B9nmbI6iIam1n3
+Z25 V;J>YO_0>PU61n=^146[fj3
+R4
+R16
+R17
+R18
+Z26 L0 158
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10

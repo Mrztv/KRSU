@@ -1,0 +1,246 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
+
+// DATE "11/10/2026 22:29:24"
+
+// 
+// Device: Altera EP3C16F484C6 Package FBGA484
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module lab5 (
+	A,
+	C0,
+	C1,
+	B,
+	C,
+	D,
+	E,
+	F,
+	G);
+output 	A;
+input 	C0;
+input 	C1;
+output 	B;
+output 	C;
+output 	D;
+output 	E;
+output 	F;
+output 	G;
+
+// Design Ports Information
+// A	=>  Location: PIN_E11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// B	=>  Location: PIN_F11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// C	=>  Location: PIN_H12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// D	=>  Location: PIN_H13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// E	=>  Location: PIN_G12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// F	=>  Location: PIN_F12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// G	=>  Location: PIN_F13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// C0	=>  Location: PIN_J6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// C1	=>  Location: PIN_H5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \A~output_o ;
+wire \B~output_o ;
+wire \C~output_o ;
+wire \D~output_o ;
+wire \E~output_o ;
+wire \F~output_o ;
+wire \G~output_o ;
+wire \C0~input_o ;
+wire \C1~input_o ;
+wire \inst|A~0_combout ;
+wire \inst|D~combout ;
+
+
+// Location: IOOBUF_X21_Y29_N23
+cycloneiii_io_obuf \A~output (
+	.i(!\inst|A~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\A~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \A~output .bus_hold = "false";
+defparam \A~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X21_Y29_N30
+cycloneiii_io_obuf \B~output (
+	.i(\C0~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\B~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \B~output .bus_hold = "false";
+defparam \B~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X26_Y29_N2
+cycloneiii_io_obuf \C~output (
+	.i(\C0~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\C~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \C~output .bus_hold = "false";
+defparam \C~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X28_Y29_N30
+cycloneiii_io_obuf \D~output (
+	.i(\inst|D~combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\D~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \D~output .bus_hold = "false";
+defparam \D~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X26_Y29_N9
+cycloneiii_io_obuf \E~output (
+	.i(\inst|D~combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\E~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \E~output .bus_hold = "false";
+defparam \E~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X28_Y29_N23
+cycloneiii_io_obuf \F~output (
+	.i(!\inst|A~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\F~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \F~output .bus_hold = "false";
+defparam \F~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X26_Y29_N16
+cycloneiii_io_obuf \G~output (
+	.i(\C1~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\G~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \G~output .bus_hold = "false";
+defparam \G~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y24_N1
+cycloneiii_io_ibuf \C0~input (
+	.i(C0),
+	.ibar(gnd),
+	.o(\C0~input_o ));
+// synopsys translate_off
+defparam \C0~input .bus_hold = "false";
+defparam \C0~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y27_N1
+cycloneiii_io_ibuf \C1~input (
+	.i(C1),
+	.ibar(gnd),
+	.o(\C1~input_o ));
+// synopsys translate_off
+defparam \C1~input .bus_hold = "false";
+defparam \C1~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y28_N0
+cycloneiii_lcell_comb \inst|A~0 (
+// Equation(s):
+// \inst|A~0_combout  = \C0~input_o  $ (\C1~input_o )
+
+	.dataa(gnd),
+	.datab(\C0~input_o ),
+	.datac(gnd),
+	.datad(\C1~input_o ),
+	.cin(gnd),
+	.combout(\inst|A~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|A~0 .lut_mask = 16'h33CC;
+defparam \inst|A~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y28_N2
+cycloneiii_lcell_comb \inst|D (
+// Equation(s):
+// \inst|D~combout  = (\C0~input_o  & \C1~input_o )
+
+	.dataa(gnd),
+	.datab(\C0~input_o ),
+	.datac(gnd),
+	.datad(\C1~input_o ),
+	.cin(gnd),
+	.combout(\inst|D~combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|D .lut_mask = 16'hCC00;
+defparam \inst|D .sum_lutc_input = "datac";
+// synopsys translate_on
+
+assign A = \A~output_o ;
+
+assign B = \B~output_o ;
+
+assign C = \C~output_o ;
+
+assign D = \D~output_o ;
+
+assign E = \E~output_o ;
+
+assign F = \F~output_o ;
+
+assign G = \G~output_o ;
+
+endmodule

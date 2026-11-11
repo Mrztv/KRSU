@@ -1,38 +1,13 @@
-|behavioral
-F_sop << behavioral_sop:comb_4.port0
-F_pos << behavioral_pos:comb_3.port0
-A => A.IN2
-B => B.IN2
-C => C.IN2
-
-
-|behavioral|behavioral_pos:comb_3
-F <= F.DB_MAX_OUTPUT_PORT_TYPE
-A => F.IN0
-A => F.IN0
-A => F.IN0
-B => F.IN1
-B => F.IN1
-B => F.IN1
-C => F.IN1
-C => F.IN1
-C => F.IN1
-
-
-|behavioral|behavioral_sop:comb_4
-F <= F.DB_MAX_OUTPUT_PORT_TYPE
-A => F.IN0
-A => F.IN0
-A => F.IN0
-A => F.IN0
-B => F.IN1
-B => F.IN1
-B => F.IN1
-B => F.IN1
-C => F.IN1
-C => F.IN1
-C => F.IN1
-C => F.IN1
-C => F.IN1
+|pos_block
+F <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+B => inst7.IN0
+B => inst2.IN0
+C => inst.IN1
+C => inst8.IN0
+C => inst2.IN1
+A => inst.IN2
+A => inst1.IN2
+A => inst6.IN0
 
 

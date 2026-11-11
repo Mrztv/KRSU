@@ -18,15 +18,15 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/13/2026 15:28:47"
+// Generated on "11/10/2026 14:57:40"
                                                                         
-// Verilog Self-Checking Test Bench (with test vectors) for design :    behavioral
+// Verilog Self-Checking Test Bench (with test vectors) for design :    pos_block
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module behavioral_vlg_sample_tst(
+module pos_block_vlg_sample_tst(
 	A,
 	B,
 	C,
@@ -58,33 +58,27 @@ end
 assign sampler_tx = sample;
 endmodule
 
-module behavioral_vlg_check_tst (
-	F_pos,
-	F_sop,
+module pos_block_vlg_check_tst (
+	F,
 	sampler_rx
 );
-input  F_pos;
-input  F_sop;
+input  F;
 input sampler_rx;
 
-reg  F_pos_expected;
-reg  F_sop_expected;
+reg  F_expected;
 
-reg  F_pos_prev;
-reg  F_sop_prev;
+reg  F_prev;
 
-reg  F_pos_expected_prev;
-reg  F_sop_expected_prev;
+reg  F_expected_prev;
 
-reg  last_F_pos_exp;
-reg  last_F_sop_exp;
+reg  last_F_exp;
 
 reg trigger;
 
 integer i;
 integer nummismatches;
 
-reg [1:2] on_first_change ;
+reg [1:1] on_first_change ;
 
 
 initial
@@ -92,40 +86,32 @@ begin
 trigger = 0;
 i = 0;
 nummismatches = 0;
-on_first_change = 2'b1;
+on_first_change = 1'b1;
 end
 
 // update real /o prevs
 
 always @(trigger)
 begin
-	F_pos_prev = F_pos;
-	F_sop_prev = F_sop;
+	F_prev = F;
 end
 
 // update expected /o prevs
 
 always @(trigger)
 begin
-	F_pos_expected_prev = F_pos_expected;
-	F_sop_expected_prev = F_sop_expected;
+	F_expected_prev = F_expected;
 end
 
 
 
-// expected F_pos
+// expected F
 initial
 begin
-	F_pos_expected = 1'bX;
-end 
-
-// expected F_sop
-initial
-begin
-	F_sop_expected = 1'bX;
+	F_expected = 1'bX;
 end 
 // generate trigger
-always @(F_pos_expected or F_pos or F_sop_expected or F_sop)
+always @(F_expected or F)
 begin
 	trigger <= ~trigger;
 end
@@ -135,34 +121,21 @@ begin
 `ifdef debug_tbench
 	$display("Scanning pattern %d @time = %t",i,$realtime );
 	i = i + 1;
-	$display("| expected F_pos = %b | expected F_sop = %b | ",F_pos_expected_prev,F_sop_expected_prev);
-	$display("| real F_pos = %b | real F_sop = %b | ",F_pos_prev,F_sop_prev);
+	$display("| expected F = %b | ",F_expected_prev);
+	$display("| real F = %b | ",F_prev);
 `endif
 	if (
-		( F_pos_expected_prev !== 1'bx ) && ( F_pos_prev !== F_pos_expected_prev )
-		&& ((F_pos_expected_prev !== last_F_pos_exp) ||
+		( F_expected_prev !== 1'bx ) && ( F_prev !== F_expected_prev )
+		&& ((F_expected_prev !== last_F_exp) ||
 			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port F_pos :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", F_pos_expected_prev);
-		$display ("     Real value = %b", F_pos_prev);
+		$display ("ERROR! Vector Mismatch for output port F :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", F_expected_prev);
+		$display ("     Real value = %b", F_prev);
 		nummismatches = nummismatches + 1;
 		on_first_change[1] = 1'b0;
-		last_F_pos_exp = F_pos_expected_prev;
-	end
-	if (
-		( F_sop_expected_prev !== 1'bx ) && ( F_sop_prev !== F_sop_expected_prev )
-		&& ((F_sop_expected_prev !== last_F_sop_exp) ||
-			on_first_change[2])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port F_sop :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", F_sop_expected_prev);
-		$display ("     Real value = %b", F_sop_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_F_sop_exp = F_sop_expected_prev;
+		last_F_exp = F_expected_prev;
 	end
 
 	trigger <= ~trigger;
@@ -180,26 +153,24 @@ $finish;
 end 
 endmodule
 
-module behavioral_vlg_vec_tst();
+module pos_block_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg A;
 reg B;
 reg C;
 // wires                                               
-wire F_pos;
-wire F_sop;
+wire F;
 
 wire sampler;                             
 
 // assign statements (if any)                          
-behavioral i1 (
+pos_block i1 (
 // port map - connection between master ports and signals/registers   
 	.A(A),
 	.B(B),
 	.C(C),
-	.F_pos(F_pos),
-	.F_sop(F_sop)
+	.F(F)
 );
 
 // A
@@ -226,16 +197,15 @@ begin
 	#100000;
 end 
 
-behavioral_vlg_sample_tst tb_sample (
+pos_block_vlg_sample_tst tb_sample (
 	.A(A),
 	.B(B),
 	.C(C),
 	.sampler_tx(sampler)
 );
 
-behavioral_vlg_check_tst tb_out(
-	.F_pos(F_pos),
-	.F_sop(F_sop),
+pos_block_vlg_check_tst tb_out(
+	.F(F),
 	.sampler_rx(sampler)
 );
 endmodule

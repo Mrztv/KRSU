@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab05/lab5_1/lab5_1.bdf
+source_file = 1, C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab05/lab5_1/task.bdf
+source_file = 1, C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab05/lab5_1/decoder_2_7.v
+source_file = 1, C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab05/lab5_1/db/lab5_1.cbx.xml
+design_name = task
+instance = comp, \A~output\, A~output, task, 1
+instance = comp, \B~output\, B~output, task, 1
+instance = comp, \C~output\, C~output, task, 1
+instance = comp, \D~output\, D~output, task, 1
+instance = comp, \E~output\, E~output, task, 1
+instance = comp, \F~output\, F~output, task, 1
+instance = comp, \G~output\, G~output, task, 1
+instance = comp, \C0~input\, C0~input, task, 1
+instance = comp, \C1~input\, C1~input, task, 1
+instance = comp, \inst|F~0\, inst|F~0, task, 1
+instance = comp, \inst|D~0\, inst|D~0, task, 1

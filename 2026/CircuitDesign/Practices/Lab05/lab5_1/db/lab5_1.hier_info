@@ -1,0 +1,33 @@
+|lab5
+A <= decoder_2_7:inst.A
+C0 => decoder_2_7:inst.C0
+C1 => decoder_2_7:inst.C1
+B <= decoder_2_7:inst.B
+C <= decoder_2_7:inst.C
+D <= decoder_2_7:inst.D
+E <= decoder_2_7:inst.E
+F <= decoder_2_7:inst.F
+G <= decoder_2_7:inst.G
+
+
+|lab5|decoder_2_7:inst
+A <= A.DB_MAX_OUTPUT_PORT_TYPE
+B <= C0.DB_MAX_OUTPUT_PORT_TYPE
+C <= C0.DB_MAX_OUTPUT_PORT_TYPE
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+F <= A.DB_MAX_OUTPUT_PORT_TYPE
+G <= C1.DB_MAX_OUTPUT_PORT_TYPE
+C0 => A.IN0
+C0 => D.IN0
+C0 => E.IN0
+C0 => B.DATAIN
+C0 => C.DATAIN
+C0 => A.IN0
+C1 => A.IN1
+C1 => D.IN1
+C1 => E.IN1
+C1 => G.DATAIN
+C1 => A.IN1
+
+

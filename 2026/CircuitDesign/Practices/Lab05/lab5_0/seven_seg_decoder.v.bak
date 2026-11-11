@@ -1,0 +1,9 @@
+module seven_seg_decoder 
+(
+	A,B,C,D,E,F,G, X0, X1, X2, X3
+)
+input X0, X1, X2, X3;
+output A,B,C,D,E,F,G;
+
+
+endmodule

@@ -1,0 +1,11 @@
+module decoder_2_7 (A,B,C,D,E,F,G, C0, C1);
+	output A,B,C,D,E,F,G;
+	input C0, C1;
+	assign A = ~(~C1&C0 | C1&~C0);
+	assign B = C0;
+	assign C = C0;
+	assign D = (C1&C0);
+	assign E = (C1&C0);
+	assign F = ~(C1&~C0 | ~C1&C0);
+	assign G = C1;
+endmodule

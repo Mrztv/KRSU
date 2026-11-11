@@ -1,0 +1,311 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 32 112 200 128)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "P" (rect 5 0 12 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 24 168 192 184)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "H" (rect 5 0 13 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 24 208 192 224)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "T" (rect 5 0 10 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 24 624 192 640)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "M" (rect 5 0 13 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 936 296 1112 312)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "AC" (rect 90 0 105 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 592 128 768 144)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "E" (rect 90 0 97 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 544 472 720 488)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "F" (rect 90 0 97 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(block
+	(rect 280 72 488 304)
+	(text "normal" (rect 5 5 42 19)(font "Arial" (font_size 8)))	(text "inst" (rect 5 217 22 229)(font "Arial" ))	(block_io "P" (input))
+	(block_io "T" (input))
+	(block_io "H" (input))
+	(block_io "E" (output))
+	(mapper
+		(pt 0 80)
+		(bidir)
+		)
+	(mapper
+		(pt 208 120)
+		(bidir)
+		)
+)
+(block
+	(rect 280 344 488 584)
+	(text "powersaving" (rect 5 5 80 19)(font "Arial" (font_size 8)))	(text "inst1" (rect 5 225 28 237)(font "Arial" ))	(block_io "P" (input))
+	(block_io "T" (input))
+	(block_io "H" (input))
+	(block_io "F" (output))
+	(mapper
+		(pt 0 112)
+		(bidir)
+		)
+	(mapper
+		(pt 208 80)
+		(bidir)
+		)
+)
+(block
+	(rect 648 208 808 392)
+	(text "multiplexer" (rect 5 5 65 19)(font "Arial" (font_size 8)))	(text "inst2" (rect 5 169 28 181)(font "Arial" ))	(block_io "E" (input))
+	(block_io "F" (input))
+	(block_io "M" (input))
+	(block_io "AC" (output))
+	(mapper
+		(pt 0 64)
+		(bidir)
+		)
+	(mapper
+		(pt 0 104)
+		(bidir)
+		)
+	(mapper
+		(pt 0 136)
+		(bidir)
+		)
+	(mapper
+		(pt 160 96)
+		(bidir)
+		)
+)
+(connector
+	(pt 200 120)
+	(pt 248 120)
+	(conduit)
+)
+(connector
+	(pt 192 176)
+	(pt 248 176)
+	(conduit)
+)
+(connector
+	(pt 248 120)
+	(pt 248 152)
+	(conduit)
+)
+(connector
+	(pt 192 216)
+	(pt 248 216)
+	(conduit)
+)
+(connector
+	(pt 248 152)
+	(pt 248 176)
+	(conduit)
+)
+(connector
+	(pt 248 176)
+	(pt 248 216)
+	(conduit)
+)
+(connector
+	(pt 264 152)
+	(pt 264 456)
+	(conduit)
+)
+(connector
+	(pt 264 456)
+	(pt 280 456)
+	(conduit)
+)
+(connector
+	(pt 248 152)
+	(pt 264 152)
+	(conduit)
+)
+(connector
+	(pt 264 152)
+	(pt 280 152)
+	(conduit)
+)
+(connector
+	(pt 488 192)
+	(pt 536 192)
+	(conduit)
+)
+(connector
+	(pt 536 272)
+	(pt 648 272)
+	(conduit)
+)
+(connector
+	(pt 488 424)
+	(pt 536 424)
+	(conduit)
+)
+(connector
+	(pt 536 312)
+	(pt 648 312)
+	(conduit)
+)
+(connector
+	(pt 192 632)
+	(pt 600 632)
+	(conduit)
+)
+(connector
+	(pt 600 632)
+	(pt 600 344)
+	(conduit)
+)
+(connector
+	(pt 600 344)
+	(pt 648 344)
+	(conduit)
+)
+(connector
+	(pt 808 304)
+	(pt 936 304)
+	(conduit)
+)
+(connector
+	(pt 536 136)
+	(pt 592 136)
+	(conduit)
+)
+(connector
+	(pt 536 136)
+	(pt 536 192)
+	(conduit)
+)
+(connector
+	(pt 536 192)
+	(pt 536 272)
+	(conduit)
+)
+(connector
+	(pt 536 480)
+	(pt 544 480)
+	(conduit)
+)
+(connector
+	(pt 536 312)
+	(pt 536 424)
+	(conduit)
+)
+(connector
+	(pt 536 424)
+	(pt 536 480)
+	(conduit)
+)
+(junction (pt 248 152))
+(junction (pt 248 176))
+(junction (pt 264 152))
+(junction (pt 536 192))
+(junction (pt 536 424))

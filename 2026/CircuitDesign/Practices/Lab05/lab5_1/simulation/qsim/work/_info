@@ -1,0 +1,138 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\timur\Documents\KRSU\2026\CircuitDesign\Practices\Lab05\lab5_1\simulation\qsim
+vlab5
+Z1 ICLnV2m<`T57kWkDD7WiS11
+Z2 V@z2o>f99C<HB@ZR`SFBT_1
+Z3 dC:\Users\timur\Documents\KRSU\2026\CircuitDesign\Practices\Lab05\lab5_1\simulation\qsim
+Z4 w1794328164
+Z5 8lab5_1.vo
+Z6 Flab5_1.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|lab5_1.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 J;GIOc?hnN;8om;AlCVdR0
+!s85 0
+Z11 !s108 1794328165.454000
+Z12 !s107 lab5_1.vo|
+!s101 -O0
+vlab5_vlg_check_tst
+!i10b 1
+Z13 !s100 hBQo?9:7h47Si6J>c0^JK2
+Z14 I1KlU1lz@97lTc^FD5eNQe1
+Z15 V9;XK?`H7_64=V[EN_01G]3
+R3
+Z16 w1794328163
+Z17 8Waveform.vwf.vt
+Z18 FWaveform.vwf.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z19 !s108 1794328165.572000
+Z20 !s107 Waveform.vwf.vt|
+Z21 !s90 -work|work|Waveform.vwf.vt|
+!s101 -O0
+R9
+vlab5_vlg_sample_tst
+!i10b 1
+Z22 !s100 jcV^k2^QbCNJ@<z6K`KPX1
+Z23 Ii_47mAkaU5XkM4b_RdC<_0
+Z24 VWGMbU<Lof>Yj2d?<9aVG50
+R3
+R16
+R17
+R18
+L0 29
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
+vlab5_vlg_vec_tst
+!i10b 1
+Z25 !s100 KY@19F^5XS`^SeOWGkJ0E2
+Z26 IYNf05c675j_PQKjZ]0fm:1
+Z27 Vl]k[MHb8HoPJSaBzTVYWg2
+R3
+R16
+R17
+R18
+Z28 L0 316
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
+vtask
+Z29 !s100 6kzg>1JRBF]DzSW;H13c73
+Z30 ID=E^hHRCT`<09H90RQ=L>1
+Z31 V2^So=gcPOZ4_7H2;=Dj<S2
+R3
+Z32 w1794327538
+R5
+R6
+L0 31
+R7
+r1
+31
+R8
+R9
+Z33 !s108 1794327539.655000
+R12
+!i10b 1
+!s85 0
+!s101 -O0
+vtask_vlg_check_tst
+Z34 !s100 B9B@koe:K1gmFK3Y_d^OR1
+Z35 IY2n5fIV@lk?`V5I4RVEEQ3
+Z36 VQMcLE5=HS`NVNNUh8l7Ym0
+R3
+Z37 w1794327537
+R17
+R18
+L0 59
+R7
+r1
+31
+Z38 !s108 1794327539.767000
+Z39 !s107 Waveform.vwf.vt|
+R21
+R9
+!i10b 1
+!s85 0
+!s101 -O0
+vtask_vlg_sample_tst
+Z40 !s100 ]iI?2KFNcHY_lIY^mkH131
+Z41 I2Uz:H[QhkKF3E:oEoRGUB2
+Z42 VI1CWazZhnS[d_>S9fbNKz3
+R3
+R37
+R17
+R18
+L0 29
+R7
+r1
+31
+R38
+R39
+R21
+R9
+!i10b 1
+!s85 0
+!s101 -O0

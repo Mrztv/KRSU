@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab04/Lab4_3/Lab4_3.bdf
+source_file = 1, C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab04/Lab4_3/db/Lab4_3.cbx.xml
+design_name = Lab4_3
+instance = comp, \f~output\, f~output, Lab4_3, 1
+instance = comp, \x2~input\, x2~input, Lab4_3, 1
+instance = comp, \x1~input\, x1~input, Lab4_3, 1
+instance = comp, \x3~input\, x3~input, Lab4_3, 1
+instance = comp, \inst2~0\, inst2~0, Lab4_3, 1

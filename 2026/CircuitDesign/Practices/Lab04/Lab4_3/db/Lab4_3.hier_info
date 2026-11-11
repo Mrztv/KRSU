@@ -1,0 +1,38 @@
+|blended
+f <= f_variant1:inst.f
+x1 <= x1_block:inst4.x1
+z1 => x1_block:inst4.z1
+z1 => x3_block:inst5.z1
+z2 => x1_block:inst4.z2
+z2 => x3_block:inst5.z2
+z3 => x1_block:inst4.z3
+z3 => x3_block:inst5.z3
+z4 => x1_block:inst4.z4
+z4 => x3_block:inst5.z4
+x2 => f_variant1:inst.x2
+x3 <= x3_block:inst5.x3
+
+
+|blended|f_variant1:inst
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+x1 => Decoder0.IN0
+x2 => Decoder0.IN1
+x3 => Decoder0.IN2
+
+
+|blended|x1_block:inst4
+z1 => res1.IN0
+z2 => res1.IN1
+z3 => res2.IN0
+z4 => res2.IN1
+x1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|blended|x3_block:inst5
+z1 => x3.IN0
+z2 => x3.IN0
+z3 => x3.IN1
+z4 => x3.IN1
+x3 <= x3.DB_MAX_OUTPUT_PORT_TYPE
+
+

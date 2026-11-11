@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab04/Lab4_1/farmer_problem.v
+source_file = 1, C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab04/Lab4_1/db/Lab4_1.cbx.xml
+design_name = farmer_problem
+instance = comp, \A~output\, A~output, farmer_problem, 1
+instance = comp, \C~input\, C~input, farmer_problem, 1
+instance = comp, \W~input\, W~input, farmer_problem, 1
+instance = comp, \G~input\, G~input, farmer_problem, 1
+instance = comp, \F~input\, F~input, farmer_problem, 1
+instance = comp, \WideOr0~0\, WideOr0~0, farmer_problem, 1
