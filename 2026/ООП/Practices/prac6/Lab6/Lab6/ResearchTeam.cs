@@ -1,8 +1,8 @@
 using System.Collections;
 
-namespace Lab5;
+namespace Lab6;
 
-class ResearchTeam : Team, INameAndCopy
+public class ResearchTeam : Team, INameAndCopy, IComparer<ResearchTeam>
 {
     private string _topic;
 
@@ -19,12 +19,12 @@ class ResearchTeam : Team, INameAndCopy
         get => _researchDuration; 
         set => _researchDuration = value;
     }
-    private ArrayList _papers;
+    private List<Paper> _papers;
 
-    public ArrayList Papers
+    public List<Paper> Papers
     {
         get => _papers;
-        set => _papers = value ?? new ArrayList();
+        set => _papers = value ?? new List<Paper>();
     }
 
     public Paper? LastPaper
@@ -36,17 +36,15 @@ class ResearchTeam : Team, INameAndCopy
                 return null;
             }
 
-            ArrayList sorted = (ArrayList) Papers.Clone();
-            
+            List<Paper> sorted = _papers.ToList();
             sorted.Sort();
-            // пробует преобразовать sorted[^1] к Paper если не удачно то возвращает null, 
-            return sorted[^1] as Paper;
+            return sorted[^1];
         }
     }
 
-    private ArrayList _persons;
+    private List<Person> _persons;
 
-    public ArrayList Persons
+    public List<Person> Persons
     {
         get => _persons;
         set => _persons = value ?? throw new ArgumentNullException(nameof(value));
@@ -72,7 +70,8 @@ class ResearchTeam : Team, INameAndCopy
     {
         _topic = topic;
         _researchDuration = researchDuration;
-        _papers = new ArrayList();
+        _papers = new List<Paper>();
+        _persons = new List<Person>();
     }
 
     public ResearchTeam() : base()
@@ -81,7 +80,8 @@ class ResearchTeam : Team, INameAndCopy
         // _organization = "Friend Inc.";
         // _registrationNumber = 1;
         _researchDuration = TimeFrame.Year;
-        _papers = new ArrayList();
+        _papers = new List<Paper>();
+        _persons = new List<Person>();
     }
 
 
@@ -93,17 +93,27 @@ class ResearchTeam : Team, INameAndCopy
         _papers.CopyTo(tmp, 0);
         _papers = new Paper[newLong];
         tmp.CopyTo(_papers, 0);
-        papers.CopyTo(_papers, tmp.Length);*/
+        papers.CopyTo(_papers, tmp.Length);
+        */
         
         _papers.AddRange(papers);
         
+    }
+
+    public int Compare(ResearchTeam? x, ResearchTeam? y)
+    {
+        if (x is null || y is null)
+        {
+            throw new ArgumentException("Arguments cannot be null.");
+        }
+        return String.Compare(x._topic, y._topic);
     }
 
     public override bool Equals(object? obj)
     {
         if (obj is ResearchTeam team)
         {
-            return _topic.Equals(team.Topic) && _researchDuration.Equals(team.ResearchDuration) && base.Equals(team) && _papers.Equals(team.Papers) && _persons.Equals(team.Persons);
+            return _topic.Equals(team.Topic) && _researchDuration.Equals(team.ResearchDuration) && base.Equals(team);
         }
         return false;
     }
@@ -130,7 +140,7 @@ class ResearchTeam : Team, INameAndCopy
     
     public virtual string ToShortString()
     {
-        return $"{base.ToString()} {_topic} {_researchDuration}";
+        return $"{base.ToString()} Topic: {_topic} ResearchDuration: {_researchDuration}";
     }
     
     
@@ -138,15 +148,15 @@ class ResearchTeam : Team, INameAndCopy
     public new object DeepCopy()
     {
         ResearchTeam researchTeam = new ResearchTeam(_topic, organization, Name, Id, _researchDuration);
-        researchTeam.Papers = new ArrayList();
+        researchTeam.Papers = new List<Paper>();
         foreach (Paper paper in Papers)
         {
-            researchTeam.Papers.Add(paper.DeepCopy());
+            researchTeam.Papers.Add((Paper) paper.DeepCopy());
         }
-        researchTeam.Persons = new ArrayList();
+        researchTeam.Persons = new List<Person>();
         foreach (Person person in Persons)
         {
-            researchTeam.Persons.Add(person.DeepCopy());
+            researchTeam.Persons.Add((Person) person.DeepCopy());
         }
         researchTeam.Topic = new string(_topic);
         researchTeam.ResearchDuration = ResearchDuration;

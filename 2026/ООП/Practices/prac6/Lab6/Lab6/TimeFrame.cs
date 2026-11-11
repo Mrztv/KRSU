@@ -1,6 +1,6 @@
-namespace Lab5;
+namespace Lab6;
 
-enum TimeFrame
+public enum TimeFrame
 {
     Year,
     TwoYear,

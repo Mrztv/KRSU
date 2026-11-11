@@ -1,6 +1,6 @@
-namespace Lab5;
+namespace Lab6;
 
-public class Team : INameAndCopy
+public class Team : INameAndCopy, IComparable
 {
     public string Name { get; set; }
     protected string organization;
@@ -69,7 +69,7 @@ public class Team : INameAndCopy
         return team1.Equals(team2);
     }
 
-    public static bool operator !=(Team team1, Team team2)
+    public static bool operator !=(Team? team1, Team team2)
     {
         return !team1.Equals(team2);
     }
@@ -77,5 +77,11 @@ public class Team : INameAndCopy
     public override string ToString()
     {
         return $"Name: {Name}, Id: {Id},  Organization: {Organization}";
+    }
+
+    public int CompareTo(object? obj)
+    {
+        if (obj is Team team) return id.CompareTo(team.id);
+        throw new ArgumentException("Object is not a Team");
     }
 }

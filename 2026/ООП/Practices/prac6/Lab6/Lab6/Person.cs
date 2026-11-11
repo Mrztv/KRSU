@@ -1,8 +1,8 @@
 using System.Collections;
 
-namespace Lab5;
+namespace Lab6;
 
-class Person : INameAndCopy 
+public class Person : INameAndCopy 
 {
     private string _name;
     public string Name

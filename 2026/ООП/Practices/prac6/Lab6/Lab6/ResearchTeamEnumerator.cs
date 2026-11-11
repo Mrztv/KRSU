@@ -1,13 +1,13 @@
 using System.Collections;
 
-namespace Lab5;
+namespace Lab6;
 
 class ResearchTeamEnumerator : IEnumerable<Person>
 {
     
-    ArrayList _persons;
+    private readonly ArrayList _persons;
 
-    public ResearchTeamEnumerator(ArrayList persons)
+    public ResearchTeamEnumerator(List<Person> persons)
     {
         _persons = new ArrayList(persons);
     }

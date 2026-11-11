@@ -1,6 +1,6 @@
-namespace Lab5;
+namespace Lab6;
 
-class Paper : INameAndCopy
+public class Paper : INameAndCopy
 {
     public string Name { get; set; }
     public Person Person { get; set; }
