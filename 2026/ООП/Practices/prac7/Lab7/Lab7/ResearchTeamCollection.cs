@@ -4,7 +4,7 @@ internal class ResearchTeamCollection
 {
     private List<ResearchTeam> _researchTeams;
     
-    delegate void TeamListHandler(object source, TeamListHandlerEventArgs args);
+    public delegate void TeamListHandler(object source, TeamListHandlerEventArgs args);
     
     public string Name { get; set; }
     
@@ -21,6 +21,12 @@ internal class ResearchTeamCollection
         }
     }
 
+    public ResearchTeam this[int index]
+    {
+        get { return _researchTeams[index]; }
+        set { _researchTeams[index] = value; }
+    }
+    
     public IEnumerable<ResearchTeam> TwoYearResearchTeams
     {
         get
@@ -66,17 +72,24 @@ internal class ResearchTeamCollection
         for (int i = 0; i < countOfAdd; i++)
         {
             _researchTeams.Add(new ResearchTeam($"{i+1}", "test", $"{i+1}", i+1, (TimeFrame)(i%3) ));
+            ResearchTeamAdded?.Invoke(this, new TeamListHandlerEventArgs(Name, "add", _researchTeams.Count-1));
         }
     }
 
     public void AddResearchTeams(params ResearchTeam[] researchTeams)
     {
-        _researchTeams.AddRange(researchTeams);
+        // _researchTeams.AddRange(researchTeams);
+        foreach (var researchTeam in researchTeams)
+        {
+            _researchTeams.Add(researchTeam);
+            ResearchTeamAdded?.Invoke(this, new TeamListHandlerEventArgs(Name, "add", _researchTeams.Count-1));
+        }
+
     }
 
     public override string ToString()
     {
-        string result = "Research Teams:\n";
+        string result = $"Research Teams: {Name}\n";
         foreach (var researchTeam in _researchTeams)
         {
             result += $"\t{researchTeam}\n";
@@ -109,6 +122,24 @@ internal class ResearchTeamCollection
         ResearchTeamComparer comparer = new ResearchTeamComparer();
         _researchTeams.Sort(comparer.Compare);
     }
-    
-    
+
+
+
+    public void InsertAt(int index, ResearchTeam researchTeam)
+    {
+        if (_researchTeams.Count < index + 1)
+        {
+            _researchTeams.Add(researchTeam);
+            ResearchTeamAdded?.Invoke(this, new TeamListHandlerEventArgs(Name, "add", _researchTeams.Count-1));
+        }
+        else
+        {
+            _researchTeams.Insert(index, researchTeam);
+            ResearchTeamInserted?.Invoke(this, new TeamListHandlerEventArgs(Name, "insert", index));
+        }
+    }
+
+    public event TeamListHandler ResearchTeamAdded;
+    public event TeamListHandler ResearchTeamInserted;
+
 }
