@@ -1,4 +1,4 @@
-namespace Lab6;
+namespace Lab7;
 
 internal class ResearchTeamComparer : IComparer<ResearchTeam>
 {

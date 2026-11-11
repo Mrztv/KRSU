@@ -1,13 +1,10 @@
-﻿using System.Collections;
-using System.Runtime.InteropServices;
-
-namespace Lab6;
+﻿namespace Lab7;
 
 internal class Program
 {
     private static void Main(string[] args)
     {
-        ResearchTeamCollection researchTeamCollection = new ResearchTeamCollection(3);
+        ResearchTeamCollection researchTeamCollection = new ResearchTeamCollection(3, "MyCollection");
         ResearchTeam aaa = new ResearchTeam("aaa", "aaa", "aaa", 109, TimeFrame.Year);
         aaa.AddPapers(new Paper(), new Paper(), new Paper());
         ResearchTeam bbb = new ResearchTeam("bbb", "bbb", "bbb", 14, TimeFrame.TwoYear);

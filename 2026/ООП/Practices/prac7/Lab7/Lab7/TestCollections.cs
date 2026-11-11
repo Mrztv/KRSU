@@ -1,8 +1,6 @@
-using System.Runtime.InteropServices;
+namespace Lab7;
 
-namespace Lab6;
-
-public class TestCollections
+internal class TestCollections
 {
     private List<Team> _teamList;
     private List<string> _stringList;

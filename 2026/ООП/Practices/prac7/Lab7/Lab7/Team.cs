@@ -1,6 +1,6 @@
-namespace Lab6;
+namespace Lab7;
 
-public class Team : INameAndCopy, IComparable
+internal class Team : INameAndCopy, IComparable
 {
     public string Name { get; set; }
     protected string organization;

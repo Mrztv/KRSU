@@ -1,8 +1,8 @@
 using System.Collections;
 
-namespace Lab6;
+namespace Lab7;
 
-class ResearchTeamEnumerator : IEnumerable<Person>
+internal class ResearchTeamEnumerator : IEnumerable<Person>
 {
     
     private readonly ArrayList _persons;

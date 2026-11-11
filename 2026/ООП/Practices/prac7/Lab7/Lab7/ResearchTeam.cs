@@ -1,8 +1,6 @@
-using System.Collections;
+namespace Lab7;
 
-namespace Lab6;
-
-public class ResearchTeam : Team, INameAndCopy, IComparer<ResearchTeam>
+internal class ResearchTeam : Team, INameAndCopy, IComparer<ResearchTeam>
 {
     private string _topic;
 

@@ -1,6 +1,6 @@
-namespace Lab6;
+namespace Lab7;
 
-public interface INameAndCopy
+internal interface INameAndCopy
 {
     string Name { get; set; }
     object DeepCopy();

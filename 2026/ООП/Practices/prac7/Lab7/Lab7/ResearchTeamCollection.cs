@@ -1,8 +1,13 @@
-namespace Lab6;
+namespace Lab7;
 
 internal class ResearchTeamCollection
 {
     private List<ResearchTeam> _researchTeams;
+    
+    delegate void TeamListHandler(object source, TeamListHandlerEventArgs args);
+    
+    public string Name { get; set; }
+    
 
     public int MinimalId
     {
@@ -45,11 +50,13 @@ internal class ResearchTeamCollection
 
     public ResearchTeamCollection()
     {
+        Name = "Test Name";
         _researchTeams = new List<ResearchTeam>();
     }
     
-    public ResearchTeamCollection(int countOfAdd)
+    public ResearchTeamCollection(int countOfAdd, string collectionName)
     {
+        Name = collectionName;
         _researchTeams = new List<ResearchTeam>();
         AddDefaults(countOfAdd);
     }
