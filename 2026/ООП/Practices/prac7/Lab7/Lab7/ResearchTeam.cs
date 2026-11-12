@@ -1,13 +1,20 @@
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
+
 namespace Lab7;
 
-internal class ResearchTeam : Team, INameAndCopy, IComparer<ResearchTeam>
+internal class ResearchTeam : Team, INameAndCopy, IComparer<ResearchTeam>, INotifyPropertyChanged
 {
     private string _topic;
 
     public string Topic
     {
         get => _topic;
-        set => _topic = string.IsNullOrEmpty(value) ? throw new ArgumentException("Topic cannot be empty") : value;
+        set
+        {
+            _topic = string.IsNullOrEmpty(value) ? throw new ArgumentException("Topic cannot be empty") : value;
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Topic"));
+        }
     }
     
     private TimeFrame _researchDuration;
@@ -15,7 +22,10 @@ internal class ResearchTeam : Team, INameAndCopy, IComparer<ResearchTeam>
     public TimeFrame ResearchDuration
     {
         get => _researchDuration; 
-        set => _researchDuration = value;
+        set {
+            _researchDuration = value;
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("ResearchDuration"));
+        }
     }
     private List<Paper> _papers;
 
@@ -211,7 +221,6 @@ internal class ResearchTeam : Team, INameAndCopy, IComparer<ResearchTeam>
         }
     }
 
-    
-    
-    
+
+    public event PropertyChangedEventHandler? PropertyChanged;
 }

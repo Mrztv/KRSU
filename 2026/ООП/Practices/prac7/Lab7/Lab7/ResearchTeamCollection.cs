@@ -1,12 +1,38 @@
 namespace Lab7;
 
-internal class ResearchTeamCollection
+internal class ResearchTeamCollection<TKey> where TKey : notnull
 {
     private List<ResearchTeam> _researchTeams;
     
+    private Dictionary<TKey, ResearchTeam> _researchTeamDictionary;
+    
     public delegate void TeamListHandler(object source, TeamListHandlerEventArgs args);
     
+    internal delegate void ResearchTeamsChangedHandler<TKey>(object sender, ResearchTeamsChangedHandlerArgs<TKey> args);
+
+    public event ResearchTeamsChangedHandler<TKey> ResearchTeamsChanged ;
+    
     public string Name { get; set; }
+
+    public bool Remove(ResearchTeam rt)
+    {
+        if (_researchTeamDictionary.ContainsValue(rt))
+        {
+            foreach (var key in _researchTeamDictionary.Keys)
+            {
+                if (_researchTeamDictionary[key] == rt)
+                {
+                    _researchTeamDictionary.Remove(key);
+                    ResearchTeamsChanged?.Invoke(this, new ResearchTeamsChangedHandlerArgs<TKey>(Name, 0, "", rt.Id));
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+
+    
     
 
     public int MinimalId
