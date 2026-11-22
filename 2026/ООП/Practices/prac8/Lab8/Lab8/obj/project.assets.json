@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac8/Lab7/Lab8/Lab8.csproj",
+      "projectUniqueName": "/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac8/Lab8/Lab8/Lab8.csproj",
       "projectName": "Lab8",
-      "projectPath": "/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac8/Lab7/Lab8/Lab8.csproj",
+      "projectPath": "/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac8/Lab8/Lab8/Lab8.csproj",
       "packagesPath": "/home/timur/.nuget/packages/",
-      "outputPath": "/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac8/Lab7/Lab8/obj/",
+      "outputPath": "/mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac8/Lab8/Lab8/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/timur/.nuget/NuGet/NuGet.Config"

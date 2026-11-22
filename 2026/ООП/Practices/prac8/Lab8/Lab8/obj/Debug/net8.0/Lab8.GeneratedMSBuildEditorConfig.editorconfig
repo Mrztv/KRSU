@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Lab8
-build_property.ProjectDir = /mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac8/Lab7/Lab8/
+build_property.ProjectDir = /mnt/win_ssd/Users/timur/Documents/KRSU/2026/ООП/Practices/prac8/Lab8/Lab8/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -9,6 +9,8 @@ internal delegate void ResearchTeamsChangedHandler<TKey>(object sender, Research
 internal class ResearchTeamCollection<TKey> where TKey : notnull
 {
     private readonly List<ResearchTeam> _researchTeams;
+    
+    
     private readonly Dictionary<TKey, ResearchTeam> _researchTeamDictionary;
 
     public ResearchTeamCollection(int countOfAdd, string collectionName)
