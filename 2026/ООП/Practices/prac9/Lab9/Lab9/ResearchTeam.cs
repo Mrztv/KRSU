@@ -223,14 +223,12 @@ internal class ResearchTeam : Team, INameAndCopy, IComparer<ResearchTeam>, INoti
             FileInfo? fileInfo;
             if (File.Exists(filename))
             {
-                Console.WriteLine($"{filename} Exists");
                 fileInfo = new FileInfo(filename);
             }
             else
             {
                 File.Create(filename).Close();
                 fileInfo = new FileInfo(filename);
-                Console.WriteLine($"{filename} Created");
             }
 
             fileStream = fileInfo.Open(FileMode.Create);
@@ -293,7 +291,6 @@ internal class ResearchTeam : Team, INameAndCopy, IComparer<ResearchTeam>, INoti
             FileInfo? fileInfo;
             if (File.Exists(filename))
             {
-                Console.WriteLine($"{filename} Exists");
                 fileInfo = new FileInfo(filename);
             }
             else
@@ -339,6 +336,66 @@ internal class ResearchTeam : Team, INameAndCopy, IComparer<ResearchTeam>, INoti
         }
         return false;
     }
-    
-    
+
+    public bool Load(string filename)
+    {
+        var researchTeam = this;
+        Load(filename, ref researchTeam);
+            
+        Persons =  researchTeam.Persons;
+        Topic = researchTeam.Topic;
+        ResearchDuration = researchTeam.ResearchDuration;
+        Name = researchTeam.Name;
+        Papers = researchTeam.Papers;
+        Organization = researchTeam.Organization;
+        Id = researchTeam.Id;
+        return true;
+        
+    }
+
+    public bool AddFromConsole()
+    {
+        Console.WriteLine("Enter a paper in one line and delimiter is ','");
+        Console.WriteLine("Example: Name, Person_Name, Person_Surname, Person_DateOfBirth(DD.MM.YYYY), CreationDate(DD.MM.YYYY)");
+        try
+        {
+            read:
+            string? line = null;
+            while (line is null)
+            {
+                line = Console.ReadLine();
+            }
+            string[] lines = line.Split(',');
+            if (lines.Length != 5)
+            {
+                Console.WriteLine("Wrong input, you must fill every value");
+                goto read;
+            }
+            string paper_name =  lines[0].Trim();
+            string person_name = lines[1].Trim();
+            string person_surname = lines[2].Trim();
+            string[] person_date_of_birth = lines[3].Split('.');
+            string[] creation_date = lines[4].Split('.');
+            
+            (int day, int month, int year) date_of_birth = (Int32.Parse(person_date_of_birth[0]), Int32.Parse(person_date_of_birth[1]), Int32.Parse(person_date_of_birth[2]));
+            Person person = new Person(paper_name, person_surname, new DateTime(date_of_birth.year, date_of_birth.month, date_of_birth.day));
+            
+            (int day, int month, int year) creation = (Int32.Parse(creation_date[0]), Int32.Parse(creation_date[1]), Int32.Parse(creation_date[2]));
+            Paper paper = new Paper(paper_name, person, new DateTime(creation.year, creation.month, creation.day));
+            Papers.Add(paper);
+        }
+        catch (FormatException)
+        {
+            Console.WriteLine("Wrong format for int");
+            return false;
+        }
+
+        return true;
+    }
+
+
 }
+
+//name, timur, mirzaitov, 24.05.2005, 22.11.2026
+
+//test, test, test, 3.2.2, 3.3.3

@@ -5,7 +5,6 @@ namespace Lab9;
 internal class Paper : INameAndCopy, IComparable
 {
     public string Name { get; set; }
-    [JsonIgnore]
     public Person Person { get; set; }
     public DateTime CreationDate { get; set; }
 

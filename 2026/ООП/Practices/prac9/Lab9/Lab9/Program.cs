@@ -46,19 +46,56 @@ internal class Program
 
     private static void Main()
     {
-        ResearchTeam rt = new ResearchTeam();
-        rt.Topic = "Test Topic";
-        rt.Persons.Add(new Person());
-        rt.Persons.Add(new Person());
-        rt.AddPapers(new Paper(), new Paper());
-    
-        ResearchTeam.Save("researchTeam.txt", rt);
+        ResearchTeam researchTeam = new();
+        researchTeam.AddPapers(new Paper(), new Paper());
+        researchTeam.Persons.Add(new Person());
+        researchTeam.Persons.Add(new Person());
+        researchTeam.Persons.Add(new Person());
+        
+        ResearchTeam copy = (ResearchTeam)researchTeam.DeepCopy();
+
+        Console.WriteLine(researchTeam);
+        Console.WriteLine(copy);
+
+        Console.WriteLine("Enter a filename:");
+        string fileName = null;
+        while (fileName is null)
+        {
+            fileName = Console.ReadLine();
+        }
+
         
         
-        ResearchTeam load = new ResearchTeam();
-        ResearchTeam.Load("researchTeam.txt", ref load);
-        Console.WriteLine(load);
+        if (!File.Exists(fileName))
+        {
+            Console.WriteLine("File not found");
+            File.Create(fileName).Close();
+            Console.WriteLine("File created");
+            researchTeam.Save(fileName);
+            Console.WriteLine("File saved");
+            Console.WriteLine("Exiting");
+            return;
+        }
+        else
+        {   
+            ResearchTeam loaded = new ResearchTeam();
+            loaded.Load(fileName);
+            Console.WriteLine(loaded);
+            loaded.AddFromConsole();
+            loaded.Save(fileName);
+            ResearchTeam.Load(fileName, ref loaded);
+            loaded.AddFromConsole();
+            ResearchTeam.Save(fileName, loaded);
+            Console.WriteLine(loaded);
+        }
         
-        
+        DirectoryInfo directoryInfo = new DirectoryInfo("/");
+        foreach (var directory in directoryInfo.GetDirectories())
+        {
+            Console.WriteLine(directory.Name);
+        }
+
+        directoryInfo.GetDirectories();
+
     }
 }
