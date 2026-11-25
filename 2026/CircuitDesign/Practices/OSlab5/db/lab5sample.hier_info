@@ -1,0 +1,157 @@
+|lab5
+HEX0[6] <= block_HEX:inst.F[6]
+HEX0[5] <= block_HEX:inst.F[5]
+HEX0[4] <= block_HEX:inst.F[4]
+HEX0[3] <= block_HEX:inst.F[3]
+HEX0[2] <= block_HEX:inst.F[2]
+HEX0[1] <= block_HEX:inst.F[1]
+HEX0[0] <= block_HEX:inst.F[0]
+SW[9] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[5] => ~NO_FANOUT~
+SW[4] => ~NO_FANOUT~
+SW[3] => block_HEX:inst.IN[3]
+SW[3] => structural_HEX:inst2.IN[3]
+SW[3] => behavioral_HEX:inst3.IN[3]
+SW[3] => truth_table_HEX:inst4.IN[3]
+SW[2] => block_HEX:inst.IN[2]
+SW[2] => structural_HEX:inst2.IN[2]
+SW[2] => behavioral_HEX:inst3.IN[2]
+SW[2] => truth_table_HEX:inst4.IN[2]
+SW[1] => block_HEX:inst.IN[1]
+SW[1] => structural_HEX:inst2.IN[1]
+SW[1] => behavioral_HEX:inst3.IN[1]
+SW[1] => truth_table_HEX:inst4.IN[1]
+SW[0] => block_HEX:inst.IN[0]
+SW[0] => structural_HEX:inst2.IN[0]
+SW[0] => behavioral_HEX:inst3.IN[0]
+SW[0] => truth_table_HEX:inst4.IN[0]
+HEX1[6] <= structural_HEX:inst2.F[6]
+HEX1[5] <= structural_HEX:inst2.F[5]
+HEX1[4] <= structural_HEX:inst2.F[4]
+HEX1[3] <= structural_HEX:inst2.F[3]
+HEX1[2] <= structural_HEX:inst2.F[2]
+HEX1[1] <= structural_HEX:inst2.F[1]
+HEX1[0] <= structural_HEX:inst2.F[0]
+HEX2[6] <= behavioral_HEX:inst3.F[6]
+HEX2[5] <= behavioral_HEX:inst3.F[5]
+HEX2[4] <= behavioral_HEX:inst3.F[4]
+HEX2[3] <= behavioral_HEX:inst3.F[3]
+HEX2[2] <= behavioral_HEX:inst3.F[2]
+HEX2[1] <= behavioral_HEX:inst3.F[1]
+HEX2[0] <= behavioral_HEX:inst3.F[0]
+HEX3[6] <= truth_table_HEX:inst4.F[6]
+HEX3[5] <= truth_table_HEX:inst4.F[5]
+HEX3[4] <= truth_table_HEX:inst4.F[4]
+HEX3[3] <= truth_table_HEX:inst4.F[3]
+HEX3[2] <= truth_table_HEX:inst4.F[2]
+HEX3[1] <= truth_table_HEX:inst4.F[1]
+HEX3[0] <= truth_table_HEX:inst4.F[0]
+
+
+|lab5|block_HEX:inst
+F[6] <= inst2[0].DB_MAX_OUTPUT_PORT_TYPE
+F[5] <= inst2[1].DB_MAX_OUTPUT_PORT_TYPE
+F[4] <= inst2[2].DB_MAX_OUTPUT_PORT_TYPE
+F[3] <= inst2[3].DB_MAX_OUTPUT_PORT_TYPE
+F[2] <= inst2[4].DB_MAX_OUTPUT_PORT_TYPE
+F[1] <= inst2[5].DB_MAX_OUTPUT_PORT_TYPE
+F[0] <= inst2[6].DB_MAX_OUTPUT_PORT_TYPE
+IN[3] => inst[6].IN3
+IN[3] => inst[5].IN3
+IN[3] => inst[4].IN3
+IN[3] => inst[3].IN3
+IN[3] => inst[2].IN3
+IN[3] => inst[1].IN3
+IN[3] => inst[0].IN3
+IN[2] => inst[6].IN2
+IN[2] => inst[5].IN2
+IN[2] => inst[4].IN2
+IN[2] => inst[3].IN2
+IN[2] => inst[2].IN2
+IN[2] => inst[1].IN2
+IN[2] => inst[0].IN2
+IN[1] => inst[6].IN1
+IN[1] => inst[5].IN1
+IN[1] => inst[4].IN1
+IN[1] => inst[3].IN1
+IN[1] => inst[2].IN1
+IN[1] => inst[1].IN1
+IN[1] => inst[0].IN1
+IN[0] => inst[6].IN0
+IN[0] => inst[5].IN0
+IN[0] => inst[4].IN0
+IN[0] => inst[3].IN0
+IN[0] => inst[2].IN0
+IN[0] => inst[1].IN0
+IN[0] => inst[0].IN0
+
+
+|lab5|structural_HEX:inst2
+F[6] <= WideNand6.DB_MAX_OUTPUT_PORT_TYPE
+F[5] <= WideNand5.DB_MAX_OUTPUT_PORT_TYPE
+F[4] <= WideNand4.DB_MAX_OUTPUT_PORT_TYPE
+F[3] <= WideNand3.DB_MAX_OUTPUT_PORT_TYPE
+F[2] <= WideNand2.DB_MAX_OUTPUT_PORT_TYPE
+F[1] <= WideNand1.DB_MAX_OUTPUT_PORT_TYPE
+F[0] <= WideNand0.DB_MAX_OUTPUT_PORT_TYPE
+IN[3] => WideNand0.IN0
+IN[3] => WideNand1.IN0
+IN[3] => WideNand2.IN0
+IN[3] => WideNand3.IN0
+IN[3] => WideNand4.IN0
+IN[3] => WideNand5.IN0
+IN[3] => WideNand6.IN0
+IN[2] => WideNand0.IN1
+IN[2] => WideNand1.IN1
+IN[2] => WideNand2.IN1
+IN[2] => WideNand3.IN1
+IN[2] => WideNand4.IN1
+IN[2] => WideNand5.IN1
+IN[2] => WideNand6.IN1
+IN[1] => WideNand0.IN2
+IN[1] => WideNand1.IN2
+IN[1] => WideNand2.IN2
+IN[1] => WideNand3.IN2
+IN[1] => WideNand4.IN2
+IN[1] => WideNand5.IN2
+IN[1] => WideNand6.IN2
+IN[0] => WideNand0.IN3
+IN[0] => WideNand1.IN3
+IN[0] => WideNand2.IN3
+IN[0] => WideNand3.IN3
+IN[0] => WideNand4.IN3
+IN[0] => WideNand5.IN3
+IN[0] => WideNand6.IN3
+
+
+|lab5|behavioral_HEX:inst3
+F[6] <= F.DB_MAX_OUTPUT_PORT_TYPE
+F[5] <= F.DB_MAX_OUTPUT_PORT_TYPE
+F[4] <= F.DB_MAX_OUTPUT_PORT_TYPE
+F[3] <= F.DB_MAX_OUTPUT_PORT_TYPE
+F[2] <= F.DB_MAX_OUTPUT_PORT_TYPE
+F[1] <= F.DB_MAX_OUTPUT_PORT_TYPE
+F[0] <= F.DB_MAX_OUTPUT_PORT_TYPE
+IN[3] => F.IN1
+IN[2] => F.IN1
+IN[1] => F.IN0
+IN[0] => F.IN1
+
+
+|lab5|truth_table_HEX:inst4
+F[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+F[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+F[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+F[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+F[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+F[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+F[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+IN[3] => Decoder0.IN3
+IN[2] => Decoder0.IN2
+IN[1] => Decoder0.IN1
+IN[0] => Decoder0.IN0
+
+

@@ -1,0 +1,6 @@
+module behavioral_example (F, IN);
+input [0:2]IN;
+output F; /*всегда комментируйте свой код,
+чтобы помнить то, что вы сделали*/
+assign F=(IN[0]|(~IN[2]&IN[1])); // запишите логическое выражение
+endmodule
