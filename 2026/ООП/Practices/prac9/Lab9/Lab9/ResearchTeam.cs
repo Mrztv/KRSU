@@ -198,15 +198,15 @@ internal class ResearchTeam : Team, INameAndCopy, IComparer<ResearchTeam>, INoti
         {
             researchTeam.Persons.Add((Person) person.DeepCopy());
         }
-        researchTeam.Topic = new string(_topic);
+        researchTeam.Topic = _topic;
         researchTeam.ResearchDuration = ResearchDuration;
-        researchTeam.Name = new string(Name);
+        researchTeam.Name = Name;
         return researchTeam;
     }
 
     object INameAndCopy.DeepCopy()
     {
-        return DeepCopy();
+        return MemberwiseClone();
     }
 
     public static bool Save(string filename, ResearchTeam rt)
@@ -278,7 +278,6 @@ internal class ResearchTeam : Team, INameAndCopy, IComparer<ResearchTeam>, INoti
     
     public static bool Load(string filename, ref ResearchTeam? rt)
     {
-        ResearchTeam? rtCopy = (ResearchTeam) rt?.DeepCopy();
         if (filename is null)
         {
             Console.WriteLine("Filename cannot be null.");
@@ -288,6 +287,7 @@ internal class ResearchTeam : Team, INameAndCopy, IComparer<ResearchTeam>, INoti
         FileStream? fileStream = null;
         try
         {
+            ResearchTeam? rtTmp = new  ResearchTeam();
             FileInfo? fileInfo;
             if (File.Exists(filename))
             {
@@ -300,13 +300,14 @@ internal class ResearchTeam : Team, INameAndCopy, IComparer<ResearchTeam>, INoti
 
             fileStream = fileInfo.Open(FileMode.Open);
             StreamReader streamReader = new StreamReader(fileStream);
-            
+
             var options = new JsonSerializerOptions { WriteIndented = true };
-            rt = JsonSerializer.Deserialize<ResearchTeam>(streamReader.ReadToEnd(), options);
-            
+            rtTmp = JsonSerializer.Deserialize<ResearchTeam>(streamReader.ReadToEnd(), options);
+
             streamReader.Close();
-            fileStream?.Close();
-            
+            fileStream.Close();
+
+            rt = rtTmp;
             return true;
 
         }
@@ -330,6 +331,10 @@ internal class ResearchTeam : Team, INameAndCopy, IComparer<ResearchTeam>, INoti
             Console.WriteLine("IOException: " + ex.Message);
             return false;
         }
+        catch (JsonException ex)
+        {
+            Console.WriteLine("JsonException: " + ex.Message);
+        }
         finally
         {
             fileStream?.Close();
@@ -341,7 +346,11 @@ internal class ResearchTeam : Team, INameAndCopy, IComparer<ResearchTeam>, INoti
     {
         var researchTeam = this;
         Load(filename, ref researchTeam);
-            
+        if (researchTeam is null)
+        {
+            Console.WriteLine("Error load team from file");
+            return false;
+        }
         Persons =  researchTeam.Persons;
         Topic = researchTeam.Topic;
         ResearchDuration = researchTeam.ResearchDuration;

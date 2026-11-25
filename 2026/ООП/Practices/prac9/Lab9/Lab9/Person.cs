@@ -81,8 +81,7 @@ internal class Person : INameAndCopy
     
     public object DeepCopy()
     {
-        var person = new Person(new string(_name), new string(_surname), new DateTime(_dateOfBirth.Year, _dateOfBirth.Month, _dateOfBirth.Day));
-        return person;
+        return new Person(_name, _surname, new DateTime(_dateOfBirth.Year, _dateOfBirth.Month, _dateOfBirth.Day));
     }
     
     public override int GetHashCode()

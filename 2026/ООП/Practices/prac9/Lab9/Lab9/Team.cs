@@ -8,14 +8,14 @@ internal class Team : INameAndCopy, IComparable
     public Team()
     {
         Name = "Rust";
-        Organization = "Piston Cup";
-        Id = 95;
+        organization = "Piston Cup";
+        id = 95;
     }
 
     public Team(string organization, int id, string name)
     {
         Name = name;
-        Organization = organization;
+        this.organization = organization;
         Id = id;
     }
 
@@ -36,13 +36,15 @@ internal class Team : INameAndCopy, IComparable
     public object DeepCopy()
     {
         Team tmp = new Team(organization, Id, Name);
-        tmp.Name = new string(Name);
+        tmp.Name = Name;
+        tmp.Id = Id;
+        tmp.Organization = Organization;
         return tmp;
     }
 
     object INameAndCopy.DeepCopy()
     {
-        return DeepCopy();
+        return MemberwiseClone();
     }
 
     public override bool Equals(object? obj)
