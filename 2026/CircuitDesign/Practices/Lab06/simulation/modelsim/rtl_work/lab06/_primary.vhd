@@ -1,0 +1,42 @@
+library verilog;
+use verilog.vl_types.all;
+entity lab06 is
+    port(
+        X0_2            : in     vl_logic;
+        X1_2            : in     vl_logic;
+        X2_2            : in     vl_logic;
+        X3_2            : in     vl_logic;
+        X0_1            : in     vl_logic;
+        X1_1            : in     vl_logic;
+        X2_1            : in     vl_logic;
+        X3_1            : in     vl_logic;
+        A2              : out    vl_logic;
+        B2              : out    vl_logic;
+        C2              : out    vl_logic;
+        D2              : out    vl_logic;
+        E2              : out    vl_logic;
+        F2              : out    vl_logic;
+        G2              : out    vl_logic;
+        A               : out    vl_logic;
+        B               : out    vl_logic;
+        C               : out    vl_logic;
+        D               : out    vl_logic;
+        E               : out    vl_logic;
+        F               : out    vl_logic;
+        G               : out    vl_logic;
+        A3              : out    vl_logic;
+        B3              : out    vl_logic;
+        C3              : out    vl_logic;
+        D3              : out    vl_logic;
+        E3              : out    vl_logic;
+        F3              : out    vl_logic;
+        G3              : out    vl_logic;
+        A4              : out    vl_logic;
+        B4              : out    vl_logic;
+        C4              : out    vl_logic;
+        D4              : out    vl_logic;
+        E4              : out    vl_logic;
+        F4              : out    vl_logic;
+        G4              : out    vl_logic
+    );
+end lab06;

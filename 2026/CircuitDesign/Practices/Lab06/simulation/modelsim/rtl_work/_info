@@ -1,0 +1,65 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\timur\Documents\KRSU\2026\CircuitDesign\Practices\Lab06\simulation\modelsim
+vbcd_converter
+I2QOOg><DmzJTZ9VoAfdLo3
+V5_k_=J1MHiZ12PiLCReoh1
+Z1 dC:\Users\timur\Documents\KRSU\2026\CircuitDesign\Practices\Lab06\simulation\modelsim
+w1795458630
+8C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab06/bcd_converter.v
+FC:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab06/bcd_converter.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab06 -O0
+!i10b 1
+!s100 Dcn@[^Vd[4>EzK^jM1f9e0
+!s85 0
+!s108 1795460646.984000
+!s107 C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab06/bcd_converter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab06|C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab06/bcd_converter.v|
+!s101 -O0
+vlab06
+IeO@@gL:PN0P6Q[AK52nWo0
+VjSg@GU]z7QBBI?d@YGXY72
+R1
+w1795460432
+8C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab06/lab06.v
+FC:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab06/lab06.v
+L0 19
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 iF9BY1@8=E`]4lhTZJFYN1
+!s85 0
+!s108 1795460646.858000
+!s107 C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab06/lab06.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab06|C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab06/lab06.v|
+!s101 -O0
+vseven_seg_decoder
+!i10b 1
+!s100 Kf@;;HAzIG^RBTHi5]KUf2
+IjL:Qk7bPFTS2YAcbjU3[B1
+VW4SLCiZ;H<ak4Ak^@`=2@1
+R1
+w1794302987
+8C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab06/seven_seg_decoder.v
+FC:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab06/seven_seg_decoder.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1795460647.102000
+!s107 C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab06/seven_seg_decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab06|C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab06/seven_seg_decoder.v|
+!s101 -O0
+R3
+R4

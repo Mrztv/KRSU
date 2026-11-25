@@ -1,0 +1,64 @@
+# Reading D:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Lab_6_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab06 {C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab06/lab06.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module lab06
+# 
+# Top level modules:
+# 	lab06
+# vlog -vlog01compat -work work +incdir+C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab06 {C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab06/bcd_converter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bcd_converter
+# 
+# Top level modules:
+# 	bcd_converter
+# vlog -vlog01compat -work work +incdir+C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab06 {C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab06/seven_seg_decoder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seven_seg_decoder
+# 
+# Top level modules:
+# 	seven_seg_decoder
+# 
+vsim work.lab06
+# vsim work.lab06 
+# Loading work.lab06
+# Loading work.seven_seg_decoder
+# ** Error: (vsim-3033) C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab06/lab06.v(156): Instantiation of 'adder_4bit' failed. The design unit was not found.
+# 
+#         Region: /lab06
+#         Searched libraries:
+#             C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab06/simulation/modelsim/rtl_work
+# Loading work.bcd_converter
+# Error loading design
+vsim -voptargs=+acc work.lab06
+# vsim -voptargs=+acc work.lab06 
+# Loading work.lab06
+# Loading work.seven_seg_decoder
+# ** Error: (vsim-3033) C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab06/lab06.v(156): Instantiation of 'adder_4bit' failed. The design unit was not found.
+# 
+#         Region: /lab06
+#         Searched libraries:
+#             C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab06/simulation/modelsim/rtl_work
+# Loading work.bcd_converter
+# Error loading design
+vsim -voptargs=+acc work.lab06
+# vsim -voptargs=+acc work.lab06 
+# Loading work.lab06
+# Loading work.seven_seg_decoder
+# ** Error: (vsim-3033) C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab06/lab06.v(156): Instantiation of 'adder_4bit' failed. The design unit was not found.
+# 
+#         Region: /lab06
+#         Searched libraries:
+#             C:/Users/timur/Documents/KRSU/2026/CircuitDesign/Practices/Lab06/simulation/modelsim/rtl_work
+# Loading work.bcd_converter
+# Error loading design
